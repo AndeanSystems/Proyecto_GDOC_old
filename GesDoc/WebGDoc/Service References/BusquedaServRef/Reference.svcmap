@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="74dcac9e-a2d9-43d2-875f-9d7fb0bc6df4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:30001/ServiceBusqueda.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceBusqueda5.xsd" MetadataType="Schema" ID="55227334-7535-4ebb-89ca-76b6e4494f32" SourceId="1" SourceUrl="http://localhost:30001/ServiceBusqueda.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceBusqueda51.xsd" MetadataType="Schema" ID="b7798c12-5d2e-482b-bbba-289850cb4c1c" SourceId="1" SourceUrl="http://localhost:30001/ServiceBusqueda.svc?xsd=xsd4" />
+    <MetadataFile FileName="ServiceBusqueda52.xsd" MetadataType="Schema" ID="6c3ded38-61b9-439e-8896-9a00073ff1a6" SourceId="1" SourceUrl="http://localhost:30001/ServiceBusqueda.svc?xsd=xsd0" />
+    <MetadataFile FileName="BusquedaService1.wsdl" MetadataType="Wsdl" ID="8b63f759-0f74-4267-b9d1-cf8ed9d9b873" SourceId="1" SourceUrl="http://localhost:30001/ServiceBusqueda.svc?wsdl" />
+    <MetadataFile FileName="ServiceBusqueda53.xsd" MetadataType="Schema" ID="5b45199f-60f0-4d8c-aba7-2f557abe5669" SourceId="1" SourceUrl="http://localhost:30001/ServiceBusqueda.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceBusqueda1.disco" MetadataType="Disco" ID="5d2c7c13-01eb-4e98-b635-555a1f30f2c6" SourceId="1" SourceUrl="http://localhost:30001/ServiceBusqueda.svc?disco" />
+    <MetadataFile FileName="ServiceBusqueda54.xsd" MetadataType="Schema" ID="ca8f716d-2cc4-4f6c-9437-f911597331fd" SourceId="1" SourceUrl="http://localhost:30001/ServiceBusqueda.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

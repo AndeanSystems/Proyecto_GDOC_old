@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A78BA61-D282-466A-8E4A-AB1B637AB4E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Data</RootNamespace>
+    <AssemblyName>Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dbConexion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLConexion\dSqlAccesoSistema.cs" />
+    <Compile Include="SQLConexion\dSqlAutorizador.cs" />
+    <Compile Include="SQLConexion\dSqlBandeja.cs" />
+    <Compile Include="SQLConexion\dSqlBandejaMV.cs" />
+    <Compile Include="SQLConexion\dSqlBuscarDocumentos.cs" />
+    <Compile Include="SQLConexion\dSqlBuscarLogOperacion.cs" />
+    <Compile Include="SQLConexion\dSqlComentMesa.cs" />
+    <Compile Include="SQLConexion\dSqlConsAutorizador.cs" />
+    <Compile Include="SQLConexion\dSqlConsComenMV.cs" />
+    <Compile Include="SQLConexion\dSqlConsMenuUsua.cs" />
+    <Compile Include="SQLConexion\dSqlConsModuPag.cs" />
+    <Compile Include="SQLConexion\dSqlDocAdj.cs" />
+    <Compile Include="SQLConexion\dSqlDocDig.cs" />
+    <Compile Include="SQLConexion\dSqlDocDigRef.cs" />
+    <Compile Include="SQLConexion\dSqlDocDigTD.cs" />
+    <Compile Include="SQLConexion\dSqlDocumentoElectronico.cs" />
+    <Compile Include="SQLConexion\dSqlEmpresa.cs" />
+    <Compile Include="SQLConexion\dSqlGrupo.cs" />
+    <Compile Include="SQLConexion\dSqlGrupoUsuarios.cs" />
+    <Compile Include="SQLConexion\dSqlInserMesaVirtual.cs" />
+    <Compile Include="SQLConexion\dSqlLDocDig.cs" />
+    <Compile Include="SQLConexion\dSqlLDocDigRef.cs" />
+    <Compile Include="SQLConexion\dSqlLDocElec.cs" />
+    <Compile Include="SQLConexion\dSqlListaDescripcion.cs" />
+    <Compile Include="SQLConexion\dSqlListMensAler.cs" />
+    <Compile Include="SQLConexion\dSqlListUsuarioGr.cs" />
+    <Compile Include="SQLConexion\dSqlLogOperacion.cs" />
+    <Compile Include="SQLConexion\dSqlLUserPart.cs" />
+    <Compile Include="SQLConexion\dSqlMensajeAlerta.cs" />
+    <Compile Include="SQLConexion\dSqlMesaVirtual.cs" />
+    <Compile Include="SQLConexion\dSqlOperacion.cs" />
+    <Compile Include="SQLConexion\dSqlPersonal.cs" />
+    <Compile Include="SQLConexion\dSqlPlanGestion.cs" />
+    <Compile Include="SQLConexion\dSqlRol.cs" />
+    <Compile Include="SQLConexion\dSqlTipoAcceso.cs" />
+    <Compile Include="SQLConexion\dSqlTipoArea.cs" />
+    <Compile Include="SQLConexion\dSqlTipoCargo.cs" />
+    <Compile Include="SQLConexion\dSqlTipoEvento.cs" />
+    <Compile Include="SQLConexion\dSqlTipoGrupo.cs" />
+    <Compile Include="SQLConexion\dSqlTipoMesaVirtual.cs" />
+    <Compile Include="SQLConexion\dSqlTipoOperacion.cs" />
+    <Compile Include="SQLConexion\dSqlTipoParticip.cs" />
+    <Compile Include="SQLConexion\dSqlTipoPrioridad.cs" />
+    <Compile Include="SQLConexion\dSqlTipoUsuario.cs" />
+    <Compile Include="SQLConexion\dSqlUbigeo.cs" />
+    <Compile Include="SQLConexion\dSqlUsuarioGrupo.cs" />
+    <Compile Include="SQLConexion\dSqlUsuarioParticipante.cs" />
+    <Compile Include="SQLConexion\dSqlUsuarioPer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{D290E2C1-514D-4863-B33C-5282CF64EDB4}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{E4F6C17A-993D-430E-995C-97CE376B93F5}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

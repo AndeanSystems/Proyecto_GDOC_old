@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:30001/ServiceDigitalizacion.svc?xsd=xsd2" namespace="http://www.yourcompany.com/types/" />
+  <xs:element name="SetDocDigAdd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://www.yourcompany.com/types/" minOccurs="0" name="RqtDocDig" nillable="true" type="q1:DocDigRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDocDigAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://www.yourcompany.com/types/" minOccurs="0" name="SetDocDigAddResult" nillable="true" type="q2:DocDigResponse" />
+        <xs:element xmlns:q3="http://www.yourcompany.com/types/" minOccurs="0" name="RqtDocDig" nillable="true" type="q3:DocDigRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDocDigital">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://www.yourcompany.com/types/" minOccurs="0" name="RqtDocDigi" nillable="true" type="q4:DocDigRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDocDigitalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://www.yourcompany.com/types/" minOccurs="0" name="GetDocDigitalResult" nillable="true" type="q5:LDocDigResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDocDigRefAdd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://www.yourcompany.com/types/" minOccurs="0" name="RqtDocDigRef" nillable="true" type="q6:DocDigRefRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDocDigRefAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://www.yourcompany.com/types/" minOccurs="0" name="SetDocDigRefAddResult" nillable="true" type="q7:DocDigRefResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDocDigRef">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://www.yourcompany.com/types/" minOccurs="0" name="RqtDocDigRef" nillable="true" type="q8:DocDigRefRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDocDigRefResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://www.yourcompany.com/types/" minOccurs="0" name="GetDocDigRefResult" nillable="true" type="q9:LDocDigRefResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaTipoDoc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://www.yourcompany.com/types/" minOccurs="0" name="RqtListaTipoDoc" nillable="true" type="q10:DocDigDTRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaTipoDocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://www.yourcompany.com/types/" minOccurs="0" name="GetListaTipoDocResult" nillable="true" type="q11:DocDigDTResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDocAdj">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://www.yourcompany.com/types/" minOccurs="0" name="RqtDocAdj" nillable="true" type="q12:DocAdjRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDocAdjResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://www.yourcompany.com/types/" minOccurs="0" name="SetDocAdjResult" nillable="true" type="q13:DocAdjResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDocAdj">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://www.yourcompany.com/types/" minOccurs="0" name="RqtDocAdj" nillable="true" type="q14:DocAdjRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDocAdjResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://www.yourcompany.com/types/" minOccurs="0" name="GetDocAdjResult" nillable="true" type="q15:LDocAdjResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAnulaDocAdj">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://www.yourcompany.com/types/" minOccurs="0" name="RqtDocAdj" nillable="true" type="q16:DocAdjRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAnulaDocAdjResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://www.yourcompany.com/types/" minOccurs="0" name="SetAnulaDocAdjResult" nillable="true" type="q17:DocAdjResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDocumentoElectronicoEnviar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://www.yourcompany.com/types/" minOccurs="0" name="RqtDocumentoElectronico" nillable="true" type="q18:DocumentoElectronicoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDocumentoElectronicoEnviarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://www.yourcompany.com/types/" minOccurs="0" name="SetDocumentoElectronicoEnviarResult" nillable="true" type="q19:DocumentoElectronicoResponse" />
+        <xs:element xmlns:q20="http://www.yourcompany.com/types/" minOccurs="0" name="RqtDocumentoElectronico" nillable="true" type="q20:DocumentoElectronicoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDocElec">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://www.yourcompany.com/types/" minOccurs="0" name="RqtDocElect" nillable="true" type="q21:DocumentoElectronicoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDocElecResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://www.yourcompany.com/types/" minOccurs="0" name="GetDocElecResult" nillable="true" type="q22:LDocElecResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetLogOperacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://www.yourcompany.com/types/" minOccurs="0" name="RqtLogOperacion" nillable="true" type="q23:LogOperacionRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetLogOperacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://www.yourcompany.com/types/" minOccurs="0" name="SetLogOperacionResult" nillable="true" type="q24:LogOperacionResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMensajeAlerta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://www.yourcompany.com/types/" minOccurs="0" name="RqtMensajeAlerta" nillable="true" type="q25:MensajeAlertaRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMensajeAlertaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://www.yourcompany.com/types/" minOccurs="0" name="SetMensajeAlertaResult" nillable="true" type="q26:MensajeAlertaResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMensajAlerta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://www.yourcompany.com/types/" minOccurs="0" name="RqtMensAlert" nillable="true" type="q27:MensajeAlertaRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMensajAlertaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://www.yourcompany.com/types/" minOccurs="0" name="GetMensajAlertaResult" nillable="true" type="q28:LMensajeAlertaResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListMesaVirtual">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://www.yourcompany.com/types/" minOccurs="0" name="RqtListMesVir" nillable="true" type="q29:MesaVirtualRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListMesaVirtualResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://www.yourcompany.com/types/" minOccurs="0" name="GetListMesaVirtualResult" nillable="true" type="q30:MesaVirtualResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMesaVirtual">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://www.yourcompany.com/types/" minOccurs="0" name="RqtListMesVir" nillable="true" type="q31:MesaVirtualRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMesaVirtualResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://www.yourcompany.com/types/" minOccurs="0" name="SetMesaVirtualResult" nillable="true" type="q32:InsertMesaVResponse" />
+        <xs:element xmlns:q33="http://www.yourcompany.com/types/" minOccurs="0" name="RqtListMesVir" nillable="true" type="q33:MesaVirtualRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMesaComent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://www.yourcompany.com/types/" minOccurs="0" name="RqtComentVir" nillable="true" type="q34:MesaVirtualRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMesaComentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://www.yourcompany.com/types/" minOccurs="0" name="SetMesaComentResult" nillable="true" type="q35:InsertMesaVResponse" />
+        <xs:element xmlns:q36="http://www.yourcompany.com/types/" minOccurs="0" name="RqtComentVir" nillable="true" type="q36:MesaVirtualRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListMesaComent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://www.yourcompany.com/types/" minOccurs="0" name="RqtListMesCom" nillable="true" type="q37:MesaVirtualRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListMesaComentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://www.yourcompany.com/types/" minOccurs="0" name="GetListMesaComentResult" nillable="true" type="q38:MesaVirtualResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

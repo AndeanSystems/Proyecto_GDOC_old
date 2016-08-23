@@ -1,0 +1,1041 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94A48CDF-9D1C-46F3-A0B0-6E36CE32C0C0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebGdoc</RootNamespace>
+    <AssemblyName>WebGdoc</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.60919.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libreria\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CKEditor.NET, Version=3.6.2.0, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\Lib\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\Lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="skmMenu, Version=2.2.3350.17689, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\Lib\skmMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ckeditor\adapters\jquery.js" />
+    <Content Include="ckeditor\CHANGES.html" />
+    <Content Include="ckeditor\ckeditor.js" />
+    <Content Include="ckeditor\ckeditor_basic.js" />
+    <Content Include="ckeditor\config.js" />
+    <Content Include="ckeditor\contents.css" />
+    <Content Include="ckeditor\images\spacer.gif" />
+    <Content Include="ckeditor\INSTALL.html" />
+    <Content Include="ckeditor\lang\af.js" />
+    <Content Include="ckeditor\lang\ar.js" />
+    <Content Include="ckeditor\lang\bg.js" />
+    <Content Include="ckeditor\lang\bn.js" />
+    <Content Include="ckeditor\lang\bs.js" />
+    <Content Include="ckeditor\lang\ca.js" />
+    <Content Include="ckeditor\lang\cs.js" />
+    <Content Include="ckeditor\lang\cy.js" />
+    <Content Include="ckeditor\lang\da.js" />
+    <Content Include="ckeditor\lang\de.js" />
+    <Content Include="ckeditor\lang\el.js" />
+    <Content Include="ckeditor\lang\en-au.js" />
+    <Content Include="ckeditor\lang\en-ca.js" />
+    <Content Include="ckeditor\lang\en-gb.js" />
+    <Content Include="ckeditor\lang\en.js" />
+    <Content Include="ckeditor\lang\eo.js" />
+    <Content Include="ckeditor\lang\es.js" />
+    <Content Include="ckeditor\lang\et.js" />
+    <Content Include="ckeditor\lang\eu.js" />
+    <Content Include="ckeditor\lang\fa.js" />
+    <Content Include="ckeditor\lang\fi.js" />
+    <Content Include="ckeditor\lang\fo.js" />
+    <Content Include="ckeditor\lang\fr-ca.js" />
+    <Content Include="ckeditor\lang\fr.js" />
+    <Content Include="ckeditor\lang\gl.js" />
+    <Content Include="ckeditor\lang\gu.js" />
+    <Content Include="ckeditor\lang\he.js" />
+    <Content Include="ckeditor\lang\hi.js" />
+    <Content Include="ckeditor\lang\hr.js" />
+    <Content Include="ckeditor\lang\hu.js" />
+    <Content Include="ckeditor\lang\is.js" />
+    <Content Include="ckeditor\lang\it.js" />
+    <Content Include="ckeditor\lang\ja.js" />
+    <Content Include="ckeditor\lang\ka.js" />
+    <Content Include="ckeditor\lang\km.js" />
+    <Content Include="ckeditor\lang\ko.js" />
+    <Content Include="ckeditor\lang\lt.js" />
+    <Content Include="ckeditor\lang\lv.js" />
+    <Content Include="ckeditor\lang\mn.js" />
+    <Content Include="ckeditor\lang\ms.js" />
+    <Content Include="ckeditor\lang\nb.js" />
+    <Content Include="ckeditor\lang\nl.js" />
+    <Content Include="ckeditor\lang\no.js" />
+    <Content Include="ckeditor\lang\pl.js" />
+    <Content Include="ckeditor\lang\pt-br.js" />
+    <Content Include="ckeditor\lang\pt.js" />
+    <Content Include="ckeditor\lang\ro.js" />
+    <Content Include="ckeditor\lang\ru.js" />
+    <Content Include="ckeditor\lang\sk.js" />
+    <Content Include="ckeditor\lang\sl.js" />
+    <Content Include="ckeditor\lang\sr-latn.js" />
+    <Content Include="ckeditor\lang\sr.js" />
+    <Content Include="ckeditor\lang\sv.js" />
+    <Content Include="ckeditor\lang\th.js" />
+    <Content Include="ckeditor\lang\tr.js" />
+    <Content Include="ckeditor\lang\uk.js" />
+    <Content Include="ckeditor\lang\vi.js" />
+    <Content Include="ckeditor\lang\zh-cn.js" />
+    <Content Include="ckeditor\lang\zh.js" />
+    <Content Include="ckeditor\lang\_languages.js" />
+    <Content Include="ckeditor\lang\_translationstatus.txt" />
+    <Content Include="ckeditor\LICENSE.html" />
+    <Content Include="ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\en.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\he.js" />
+    <Content Include="ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="ckeditor\plugins\adobeair\plugin.js" />
+    <Content Include="ckeditor\plugins\ajax\plugin.js" />
+    <Content Include="ckeditor\plugins\autogrow\plugin.js" />
+    <Content Include="ckeditor\plugins\bbcode\plugin.js" />
+    <Content Include="ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="ckeditor\plugins\devtools\lang\en.js" />
+    <Content Include="ckeditor\plugins\devtools\plugin.js" />
+    <Content Include="ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="ckeditor\plugins\docprops\dialogs\docprops.js" />
+    <Content Include="ckeditor\plugins\docprops\plugin.js" />
+    <Content Include="ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="ckeditor\plugins\iframedialog\plugin.js" />
+    <Content Include="ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="ckeditor\plugins\link\images\anchor.gif" />
+    <Content Include="ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="ckeditor\plugins\pastetext\dialogs\pastetext.js" />
+    <Content Include="ckeditor\plugins\placeholder\dialogs\placeholder.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\en.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\he.js" />
+    <Content Include="ckeditor\plugins\placeholder\placeholder.gif" />
+    <Content Include="ckeditor\plugins\placeholder\plugin.js" />
+    <Content Include="ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\en.js" />
+    <Content Include="ckeditor\plugins\stylesheetparser\plugin.js" />
+    <Content Include="ckeditor\plugins\styles\styles\default.js" />
+    <Content Include="ckeditor\plugins\tableresize\plugin.js" />
+    <Content Include="ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="ckeditor\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\en.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\he.js" />
+    <Content Include="ckeditor\plugins\uicolor\plugin.js" />
+    <Content Include="ckeditor\plugins\uicolor\uicolor.gif" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="ckeditor\plugins\uicolor\yui\yui.js" />
+    <Content Include="ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="ckeditor\plugins\xml\plugin.js" />
+    <Content Include="ckeditor\skins\kama\dialog.css" />
+    <Content Include="ckeditor\skins\kama\editor.css" />
+    <Content Include="ckeditor\skins\kama\icons.png" />
+    <Content Include="ckeditor\skins\kama\icons_rtl.png" />
+    <Content Include="ckeditor\skins\kama\images\dialog_sides.gif" />
+    <Content Include="ckeditor\skins\kama\images\dialog_sides.png" />
+    <Content Include="ckeditor\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="ckeditor\skins\kama\images\mini.gif" />
+    <Content Include="ckeditor\skins\kama\images\noimage.png" />
+    <Content Include="ckeditor\skins\kama\images\sprites.png" />
+    <Content Include="ckeditor\skins\kama\images\sprites_ie6.png" />
+    <Content Include="ckeditor\skins\kama\images\toolbar_start.gif" />
+    <Content Include="ckeditor\skins\kama\skin.js" />
+    <Content Include="ckeditor\skins\kama\templates.css" />
+    <Content Include="ckeditor\skins\office2003\dialog.css" />
+    <Content Include="ckeditor\skins\office2003\editor.css" />
+    <Content Include="ckeditor\skins\office2003\icons.png" />
+    <Content Include="ckeditor\skins\office2003\icons_rtl.png" />
+    <Content Include="ckeditor\skins\office2003\images\dialog_sides.gif" />
+    <Content Include="ckeditor\skins\office2003\images\dialog_sides.png" />
+    <Content Include="ckeditor\skins\office2003\images\dialog_sides_rtl.png" />
+    <Content Include="ckeditor\skins\office2003\images\mini.gif" />
+    <Content Include="ckeditor\skins\office2003\images\noimage.png" />
+    <Content Include="ckeditor\skins\office2003\images\sprites.png" />
+    <Content Include="ckeditor\skins\office2003\images\sprites_ie6.png" />
+    <Content Include="ckeditor\skins\office2003\skin.js" />
+    <Content Include="ckeditor\skins\office2003\templates.css" />
+    <Content Include="ckeditor\skins\v2\dialog.css" />
+    <Content Include="ckeditor\skins\v2\editor.css" />
+    <Content Include="ckeditor\skins\v2\icons.png" />
+    <Content Include="ckeditor\skins\v2\icons_rtl.png" />
+    <Content Include="ckeditor\skins\v2\images\dialog_sides.gif" />
+    <Content Include="ckeditor\skins\v2\images\dialog_sides.png" />
+    <Content Include="ckeditor\skins\v2\images\dialog_sides_rtl.png" />
+    <Content Include="ckeditor\skins\v2\images\mini.gif" />
+    <Content Include="ckeditor\skins\v2\images\noimage.png" />
+    <Content Include="ckeditor\skins\v2\images\sprites.png" />
+    <Content Include="ckeditor\skins\v2\images\sprites_ie6.png" />
+    <Content Include="ckeditor\skins\v2\images\toolbar_start.gif" />
+    <Content Include="ckeditor\skins\v2\skin.js" />
+    <Content Include="ckeditor\skins\v2\templates.css" />
+    <Content Include="ckeditor\themes\default\theme.js" />
+    <Content Include="frmInicio.aspx" />
+    <Content Include="Resources\CSS\AjaxMenu.css" />
+    <Content Include="Resources\CSS\BarraHerramientas.css" />
+    <Content Include="Resources\CSS\GridView.css" />
+    <Content Include="Resources\CSS\Login.css" />
+    <Content Include="Resources\CSS\mpHead.css" />
+    <Content Include="Resources\CSS\Page.css" />
+    <Content Include="Resources\Imagenes\header.jpg" />
+    <Content Include="Resources\Imagenes\Login.jpg" />
+    <Content Include="Resources\Menu\apacaya.xml" />
+    <Content Include="Resources\Menu\jmarinos.xml" />
+    <Content Include="Resources\Menu\MenuFEPCMAC.xml" />
+    <Content Include="Resources\Menu\rsecaira.xml" />
+    <Content Include="Web.config" />
+    <Content Include="WebPage\Busquedas\frmDocumentosDigitales.aspx" />
+    <Content Include="WebPage\Busquedas\frmDocumentosElectronicos.aspx" />
+    <Content Include="WebPage\Busquedas\frmLogOperaciones.aspx" />
+    <Content Include="WebPage\Busquedas\frmMesaVirtual.aspx" />
+    <Content Include="WebPage\Configuracion\frmAcceso.aspx" />
+    <Content Include="WebPage\Configuracion\frmEmpresa.aspx" />
+    <Content Include="WebPage\Configuracion\frmGrupo.aspx" />
+    <Content Include="WebPage\Configuracion\frmUsuarios.aspx" />
+    <Content Include="WebPage\Controles\AdjuntarDocumento.ascx" />
+    <Content Include="WebPage\Controles\BarraHerramientas.ascx" />
+    <Content Include="WebPage\Controles\ValidarUsuario_Grupo.ascx" />
+    <Content Include="WebPage\Digitalizacion\frmArchivoDatos.aspx" />
+    <Content Include="WebPage\Digitalizacion\frmDocumentosFisicos.aspx" />
+    <Content Include="WebPage\Digitalizacion\frmVerArchivo.aspx" />
+    <Content Include="WebPage\Digitalizacion\TmpVisor\Carga Inicial.txt" />
+    <Content Include="WebPage\Error\frmError.aspx" />
+    <Content Include="WebPage\Gestion\frmBandejaES.aspx" />
+    <Content Include="WebPage\Gestion\frmDocumentoElectronico.aspx" />
+    <Content Include="WebPage\Gestion\frmMesaVirtual.aspx" />
+    <Content Include="WebPage\Inicio\frmBlanco.aspx" />
+    <Content Include="WebPage\Inicio\frmCambiaFirmaElec.aspx" />
+    <Content Include="WebPage\Inicio\frmCambiarClave.aspx" />
+    <Content Include="WebPage\Inicio\frmEscritorioVirtual.aspx" />
+    <Content Include="WebPage\Inicio\frmLogin.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmInicio.aspx.cs">
+      <DependentUpon>frmInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\CacheProvider.cs" />
+    <Compile Include="Resources\Utility.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service References\BusquedaServRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DigitalizacionServRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\GestionServRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PlanGestionServRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesControllers\BusquedaController.cs" />
+    <Compile Include="ServicesControllers\ControllerBase.cs" />
+    <Compile Include="ServicesControllers\DigitalizacionController.cs" />
+    <Compile Include="ServicesControllers\GestionController.cs" />
+    <Compile Include="ServicesControllers\PlanGestionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebPage\Busquedas\frmDocumentosDigitales.aspx.cs">
+      <DependentUpon>frmDocumentosDigitales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Busquedas\frmDocumentosDigitales.aspx.designer.cs">
+      <DependentUpon>frmDocumentosDigitales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Busquedas\frmDocumentosElectronicos.aspx.cs">
+      <DependentUpon>frmDocumentosElectronicos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Busquedas\frmDocumentosElectronicos.aspx.designer.cs">
+      <DependentUpon>frmDocumentosElectronicos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Busquedas\frmLogOperaciones.aspx.cs">
+      <DependentUpon>frmLogOperaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Busquedas\frmLogOperaciones.aspx.designer.cs">
+      <DependentUpon>frmLogOperaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Busquedas\frmMesaVirtual.aspx.cs">
+      <DependentUpon>frmMesaVirtual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Busquedas\frmMesaVirtual.aspx.designer.cs">
+      <DependentUpon>frmMesaVirtual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Configuracion\frmAcceso.aspx.cs">
+      <DependentUpon>frmAcceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Configuracion\frmAcceso.aspx.designer.cs">
+      <DependentUpon>frmAcceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Configuracion\frmEmpresa.aspx.cs">
+      <DependentUpon>frmEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Configuracion\frmEmpresa.aspx.designer.cs">
+      <DependentUpon>frmEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Configuracion\frmGrupo.aspx.cs">
+      <DependentUpon>frmGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Configuracion\frmGrupo.aspx.designer.cs">
+      <DependentUpon>frmGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Configuracion\frmOpciones.aspx.cs">
+      <DependentUpon>frmOpciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Configuracion\frmOpciones.aspx.designer.cs">
+      <DependentUpon>frmOpciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Configuracion\frmUsuarios.aspx.cs">
+      <DependentUpon>frmUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Configuracion\frmUsuarios.aspx.designer.cs">
+      <DependentUpon>frmUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Controles\AdjuntarDocumento.ascx.cs">
+      <DependentUpon>AdjuntarDocumento.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Controles\AdjuntarDocumento.ascx.designer.cs">
+      <DependentUpon>AdjuntarDocumento.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Controles\BarraHerramientas.ascx.cs">
+      <DependentUpon>BarraHerramientas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Controles\BarraHerramientas.ascx.designer.cs">
+      <DependentUpon>BarraHerramientas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Controles\ValidarUsuario_Grupo.ascx.cs">
+      <DependentUpon>ValidarUsuario_Grupo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Controles\ValidarUsuario_Grupo.ascx.designer.cs">
+      <DependentUpon>ValidarUsuario_Grupo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Digitalizacion\frmArchivoDatos.aspx.cs">
+      <DependentUpon>frmArchivoDatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Digitalizacion\frmArchivoDatos.aspx.designer.cs">
+      <DependentUpon>frmArchivoDatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Digitalizacion\frmDocumentosFisicos.aspx.cs">
+      <DependentUpon>frmDocumentosFisicos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Digitalizacion\frmDocumentosFisicos.aspx.designer.cs">
+      <DependentUpon>frmDocumentosFisicos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Digitalizacion\frmVerArchivo.aspx.cs">
+      <DependentUpon>frmVerArchivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Digitalizacion\frmVerArchivo.aspx.designer.cs">
+      <DependentUpon>frmVerArchivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Error\frmError.aspx.cs">
+      <DependentUpon>frmError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Error\frmError.aspx.designer.cs">
+      <DependentUpon>frmError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Gestion\frmBandejaES.aspx.cs">
+      <DependentUpon>frmBandejaES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Gestion\frmBandejaES.aspx.designer.cs">
+      <DependentUpon>frmBandejaES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Gestion\frmDocumentoElectronico.aspx.cs">
+      <DependentUpon>frmDocumentoElectronico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Gestion\frmDocumentoElectronico.aspx.designer.cs">
+      <DependentUpon>frmDocumentoElectronico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Gestion\frmMesaVirtual.aspx.cs">
+      <DependentUpon>frmMesaVirtual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Gestion\frmMesaVirtual.aspx.designer.cs">
+      <DependentUpon>frmMesaVirtual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Inicio\frmBlanco.aspx.cs">
+      <DependentUpon>frmBlanco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Inicio\frmBlanco.aspx.designer.cs">
+      <DependentUpon>frmBlanco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Inicio\frmCambiaFirmaElec.aspx.cs">
+      <DependentUpon>frmCambiaFirmaElec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Inicio\frmCambiaFirmaElec.aspx.designer.cs">
+      <DependentUpon>frmCambiaFirmaElec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Inicio\frmCambiarClave.aspx.cs">
+      <DependentUpon>frmCambiarClave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Inicio\frmCambiarClave.aspx.designer.cs">
+      <DependentUpon>frmCambiarClave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Inicio\frmEscritorioVirtual.aspx.cs">
+      <DependentUpon>frmEscritorioVirtual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Inicio\frmEscritorioVirtual.aspx.designer.cs">
+      <DependentUpon>frmEscritorioVirtual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Inicio\frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Inicio\frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\Inicio\mpFEPCMAC.Master.cs">
+      <DependentUpon>mpFEPCMAC.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\Inicio\mpFEPCMAC.Master.designer.cs">
+      <DependentUpon>mpFEPCMAC.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\PlanGestion\frmActividad.aspx.cs">
+      <DependentUpon>frmActividad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\PlanGestion\frmActividad.aspx.designer.cs">
+      <DependentUpon>frmActividad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\PlanGestion\frmEstrategico.aspx.cs">
+      <DependentUpon>frmEstrategico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\PlanGestion\frmEstrategico.aspx.designer.cs">
+      <DependentUpon>frmEstrategico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\PlanGestion\frmInforme.aspx.cs">
+      <DependentUpon>frmInforme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\PlanGestion\frmInforme.aspx.designer.cs">
+      <DependentUpon>frmInforme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\PlanGestion\frmOperativo.aspx.cs">
+      <DependentUpon>frmOperativo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\PlanGestion\frmOperativo.aspx.designer.cs">
+      <DependentUpon>frmOperativo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\PlanGestion\frmProyecto.aspx.cs">
+      <DependentUpon>frmProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\PlanGestion\frmProyecto.aspx.designer.cs">
+      <DependentUpon>frmProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\PlanGestion\VisualizarPlanGestion.aspx.cs">
+      <DependentUpon>VisualizarPlanGestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\PlanGestion\VisualizarPlanGestion.aspx.designer.cs">
+      <DependentUpon>VisualizarPlanGestion.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ckeditor\.htaccess" />
+    <None Include="Resources\Imagenes\Img\Thumbs.db" />
+    <None Include="Service References\BusquedaServRef\BusquedaService1.wsdl" />
+    <None Include="Service References\BusquedaServRef\ServiceBusqueda5.xsd" />
+    <None Include="Service References\BusquedaServRef\ServiceBusqueda51.xsd" />
+    <None Include="Service References\BusquedaServRef\ServiceBusqueda52.xsd" />
+    <None Include="Service References\BusquedaServRef\ServiceBusqueda53.xsd" />
+    <None Include="Service References\BusquedaServRef\ServiceBusqueda54.xsd" />
+    <None Include="Service References\BusquedaServRef\WebGdoc.BusquedaServRef.BuscarDocumentoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BusquedaServRef\WebGdoc.BusquedaServRef.BuscarLogOperResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BusquedaServRef\WebGdoc.BusquedaServRef.MesaVirtualResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BusquedaServRef\WebGdoc.BusquedaServRef.OperacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BusquedaServRef\WebGdoc.BusquedaServRef.UbigeoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\DigitalizacionService1.wsdl" />
+    <None Include="Service References\DigitalizacionServRef\ServiceDigitalizacion4.xsd" />
+    <None Include="Service References\DigitalizacionServRef\ServiceDigitalizacion41.xsd" />
+    <None Include="Service References\DigitalizacionServRef\ServiceDigitalizacion42.xsd" />
+    <None Include="Service References\DigitalizacionServRef\ServiceDigitalizacion43.xsd" />
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.DocAdjResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.DocDigDTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.DocDigRefResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.DocDigRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.DocDigResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.DocumentoElectronicoRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.DocumentoElectronicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.InsertMesaVResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.LDocAdjResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.LDocDigRefResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.LDocDigResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.LDocElecResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.LMensajeAlertaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.LogOperacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.MensajeAlertaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.MesaVirtualRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\WebGdoc.DigitalizacionServRef.MesaVirtualResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\GestionService1.wsdl" />
+    <None Include="Service References\GestionServRef\ServiceGestion4.xsd" />
+    <None Include="Service References\GestionServRef\ServiceGestion41.xsd" />
+    <None Include="Service References\GestionServRef\ServiceGestion42.xsd" />
+    <None Include="Service References\GestionServRef\ServiceGestion43.xsd" />
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.AccesoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.AutorizaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.ConsModPagResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.EmpresaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.GrupoRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.GrupoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.GrupoUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.LAccesoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.LEmpresaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.ListaDescResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.LUserAutoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.LUserParticResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.OperacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.PersonalRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.PersonalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.RolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.TipoAccesoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.TipoAreaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.TipoCargoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.TipoEventoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.TipoGrupoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.TipoOperacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.TipoParticipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.TipoPrioridadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.TipoUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.UsuarioGrupoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.UsuarioPerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.UsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GestionServRef\WebGdoc.GestionServRef.UsuParticipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PlanGestionServRef\PlanGestionService.wsdl" />
+    <None Include="Service References\PlanGestionServRef\ServicePlanGestion.xsd" />
+    <None Include="Service References\PlanGestionServRef\ServicePlanGestion1.xsd" />
+    <None Include="Service References\PlanGestionServRef\ServicePlanGestion2.xsd" />
+    <None Include="Service References\PlanGestionServRef\ServicePlanGestion3.xsd" />
+    <None Include="Service References\BusquedaServRef\configuration91.svcinfo" />
+    <None Include="Service References\BusquedaServRef\configuration.svcinfo" />
+    <None Include="Service References\BusquedaServRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\DigitalizacionServRef\configuration91.svcinfo" />
+    <None Include="Service References\DigitalizacionServRef\configuration.svcinfo" />
+    <None Include="Service References\DigitalizacionServRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\GestionServRef\configuration91.svcinfo" />
+    <None Include="Service References\GestionServRef\configuration.svcinfo" />
+    <None Include="Service References\GestionServRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PlanGestionServRef\ServicePlanGestion.disco" />
+    <None Include="Service References\PlanGestionServRef\configuration91.svcinfo" />
+    <None Include="Service References\PlanGestionServRef\configuration.svcinfo" />
+    <None Include="Service References\PlanGestionServRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Resources\Imagenes\FEPCMAC_Logo2.jpg" />
+    <Content Include="Resources\Imagenes\Img\actualiza.JPG" />
+    <Content Include="Resources\Imagenes\Img\actualizar1.jpg" />
+    <Content Include="Resources\Imagenes\Img\Adicionar.png" />
+    <Content Include="Resources\Imagenes\Img\adjuntar - copia.png" />
+    <Content Include="Resources\Imagenes\Img\adjuntar - varios.png" />
+    <Content Include="Resources\Imagenes\Img\Alerta.jpg" />
+    <Content Include="Resources\Imagenes\Img\Archivo_PDF.bmp" />
+    <Content Include="Resources\Imagenes\Img\avanzar.jpg" />
+    <Content Include="Resources\Imagenes\Img\BanderaAmarillo.png" />
+    <Content Include="Resources\Imagenes\Img\BanderaAzul.png" />
+    <Content Include="Resources\Imagenes\Img\BanderaRoja.png" />
+    <Content Include="Resources\Imagenes\Img\BanderaVerde.png" />
+    <Content Include="Resources\Imagenes\Img\Buscar.png" />
+    <Content Include="Resources\Imagenes\Img\Buscar_Documento.jpg" />
+    <Content Include="Resources\Imagenes\Img\Calendario.png" />
+    <Content Include="Resources\Imagenes\Img\campana1.png" />
+    <Content Include="Resources\Imagenes\Img\Cancelar.bmp" />
+    <Content Include="Resources\Imagenes\Img\Cargar_Archivo old.jpg" />
+    <Content Include="Resources\Imagenes\Img\Cargar_Archivo.png" />
+    <Content Include="Resources\Imagenes\Img\Carpeta _05.jpg" />
+    <Content Include="Resources\Imagenes\Img\Carpeta_02.png" />
+    <Content Include="Resources\Imagenes\Img\clip01.jpg" />
+    <Content Include="Resources\Imagenes\Img\Comentar.jpg" />
+    <Content Include="Resources\Imagenes\Img\Comentarios.jpg" />
+    <Content Include="Resources\Imagenes\Img\Copia de u477.bmp" />
+    <Content Include="Resources\Imagenes\Img\DocE_Adj.png" />
+    <Content Include="Resources\Imagenes\Img\Documento.jpg" />
+    <Content Include="Resources\Imagenes\Img\Documentos.jpg" />
+    <Content Include="Resources\Imagenes\Img\Documento_Electronico.png" />
+    <Content Include="Resources\Imagenes\Img\Documento_importante.png" />
+    <Content Include="Resources\Imagenes\Img\Documento_muy_urgente.png" />
+    <Content Include="Resources\Imagenes\Img\Documento_urgente.png" />
+    <Content Include="Resources\Imagenes\Img\Doc_digital.jpg" />
+    <Content Include="Resources\Imagenes\Img\Enviar_Documento.png" />
+    <Content Include="Resources\Imagenes\Img\FEPCMAC.jpg" />
+    <Content Include="Resources\Imagenes\Img\FEPCMAC_Logo.jpg" />
+    <Content Include="Resources\Imagenes\Img\FirmaElectronica.png" />
+    <Content Include="Resources\Imagenes\Img\firma_correo.png" />
+    <Content Include="Resources\Imagenes\Img\FondoLogin.png" />
+    <Content Include="Resources\Imagenes\Img\Fondo_Head.png" />
+    <Content Include="Resources\Imagenes\Img\Fondo_Transparente.gif" />
+    <Content Include="Resources\Imagenes\Img\guardar_enviar.png" />
+    <Content Include="Resources\Imagenes\Img\Guardar_old.png" />
+    <Content Include="Resources\Imagenes\Img\Herramientas_02.png" />
+    <Content Include="Resources\Imagenes\Img\icono_candado.gif" />
+    <Content Include="Resources\Imagenes\Img\Inicio old.jpg" />
+    <Content Include="Resources\Imagenes\Img\inicio.png" />
+    <Content Include="Resources\Imagenes\Img\Mensaje.jpg" />
+    <Content Include="Resources\Imagenes\Img\Mensaje_03.jpg" />
+    <Content Include="Resources\Imagenes\Img\MesaVirtual.jpg" />
+    <Content Include="Resources\Imagenes\Img\Qrupo.png" />
+    <Content Include="Resources\Imagenes\Img\Quitar.png" />
+    <Content Include="Resources\Imagenes\Img\Quitar1.png" />
+    <Content Include="Resources\Imagenes\Img\Refrescar.jpg" />
+    <Content Include="Resources\Imagenes\Img\salir_retornar.jpg" />
+    <Content Include="Resources\Imagenes\Img\Subir_Documento.png" />
+    <Content Include="Resources\Imagenes\Img\u167_original.png" />
+    <Content Include="Resources\Imagenes\Img\u17_original.png" />
+    <Content Include="Resources\Imagenes\Img\u194_original.png" />
+    <Content Include="Resources\Imagenes\Img\u204_original.png" />
+    <Content Include="Resources\Imagenes\Img\u20_original.jpg" />
+    <Content Include="Resources\Imagenes\Img\u21_original.png" />
+    <Content Include="Resources\Imagenes\Img\u242_original.png" />
+    <Content Include="Resources\Imagenes\Img\u257_original.png" />
+    <Content Include="Resources\Imagenes\Img\u25_original MV.jpg" />
+    <Content Include="Resources\Imagenes\Img\u25_original old.jpg" />
+    <Content Include="Resources\Imagenes\Img\u278_original.png" />
+    <Content Include="Resources\Imagenes\Img\u282_original.png" />
+    <Content Include="Resources\Imagenes\Img\u290_original.png" />
+    <Content Include="Resources\Imagenes\Img\u29_original.jpg" />
+    <Content Include="Resources\Imagenes\Img\u378_original.png" />
+    <Content Include="Resources\Imagenes\Img\u39_original.gif" />
+    <Content Include="Resources\Imagenes\Img\u413.bmp" />
+    <Content Include="Resources\Imagenes\Img\u413_old.bmp" />
+    <Content Include="Resources\Imagenes\Img\u416_original.png" />
+    <Content Include="Resources\Imagenes\Img\u433_original.png" />
+    <Content Include="Resources\Imagenes\Img\u434.jpg" />
+    <Content Include="Resources\Imagenes\Img\u44_original.png" />
+    <Content Include="Resources\Imagenes\Img\u460.jpg" />
+    <Content Include="Resources\Imagenes\Img\u46_original.bmp" />
+    <Content Include="Resources\Imagenes\Img\u499_original.png" />
+    <Content Include="Resources\Imagenes\Img\u503_original.jpg" />
+    <Content Include="Resources\Imagenes\Img\u507.bmp" />
+    <Content Include="Resources\Imagenes\Img\u524.jpg" />
+    <Content Include="Resources\Imagenes\Img\u58_original.png" />
+    <Content Include="Resources\Imagenes\Img\u62_original.png" />
+    <Content Include="Resources\Imagenes\Img\u83_original.png" />
+    <Content Include="Resources\Imagenes\Img\u84.jpg" />
+    <Content Include="Resources\Imagenes\Img\u90_original.gif" />
+    <Content Include="Resources\Imagenes\Img\u93_original_old.png" />
+    <Content Include="Resources\Imagenes\Img\Usuario.jpg" />
+    <Content Include="Resources\Imagenes\Img\usuarios.jpg" />
+    <Content Include="Resources\Imagenes\Img\Usuarios.png" />
+    <Content Include="Resources\Imagenes\Img\Usuarios_02.png" />
+    <Content Include="Resources\Imagenes\Img\Validar.gif" />
+    <Content Include="Resources\Imagenes\img_Actualizar_A.JPG" />
+    <Content Include="Resources\Imagenes\img_Actualizar_I.JPG" />
+    <Content Include="Resources\Imagenes\img_AddItem_A.jpg" />
+    <Content Include="Resources\Imagenes\img_AddItem_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Adjuntar_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Adjuntar_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Adjunto_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Adjunto_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Alerta_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Alerta_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Banderin_Azul_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Banderin_Azul_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Buscar_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Buscar_Documento_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Buscar_Documento_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Buscar_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Calendario_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Calendario_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Cambio_Clave_A.jpg" />
+    <Content Include="Resources\Imagenes\img_CargarArchivo_A.jpg" />
+    <Content Include="Resources\Imagenes\img_CargarArchivo_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Cargar_Archivo_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Cargar_Archivo_I.jpg" />
+    <Content Include="Resources\Imagenes\img_CerrarMesa_A.jpg" />
+    <Content Include="Resources\Imagenes\img_CerrarMesa_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Detalle_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Detalle_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Documento_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Documento_I.jpg" />
+    <Content Include="Resources\Imagenes\img_EditarItem_A.jpg" />
+    <Content Include="Resources\Imagenes\img_EditarItem_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Editar_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Editar_I.jpg" />
+    <Content Include="Resources\Imagenes\img_EliminarItem_A.jpg" />
+    <Content Include="Resources\Imagenes\img_EliminarItem_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Eliminar_A.JPG" />
+    <Content Include="Resources\Imagenes\img_Eliminar_I.JPG" />
+    <Content Include="Resources\Imagenes\img_EMail_A.jpg" />
+    <Content Include="Resources\Imagenes\img_EMail_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Enviar_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Enviar_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Excel_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Excel_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Firma_Electronica_A.jpg" />
+    <Content Include="Resources\Imagenes\img_GuardarAprobacion_A.jpg" />
+    <Content Include="Resources\Imagenes\img_GuardarAprobacion_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Guardar_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Guardar_I.jpg" />
+    <Content Include="Resources\Imagenes\img_IndiceDocumento_A.jpg" />
+    <Content Include="Resources\Imagenes\img_IndiceDocumento_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Informe_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Informe_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Inicio_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Inicio_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Nuevo_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Nuevo_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Progress_A.gif" />
+    <Content Include="Resources\Imagenes\img_Publicar_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Publicar_I.jpg" />
+    <Content Include="Resources\Imagenes\img_punto_amarillo_A.jpg" />
+    <Content Include="Resources\Imagenes\img_punto_amarillo_I.jpg" />
+    <Content Include="Resources\Imagenes\img_punto_rojo_A.jpg" />
+    <Content Include="Resources\Imagenes\img_punto_rojo_I.jpg" />
+    <Content Include="Resources\Imagenes\img_punto_verde_A.jpg" />
+    <Content Include="Resources\Imagenes\img_punto_verde_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Reenviar_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Reenviar_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Transparent_A.gif" />
+    <Content Include="Resources\Imagenes\img_UsuarioAll_A.jpg" />
+    <Content Include="Resources\Imagenes\img_UsuarioAll_I.jpg" />
+    <Content Include="Resources\Imagenes\img_Usuario_A.jpg" />
+    <Content Include="Resources\Imagenes\img_Usuario_I.jpg" />
+    <None Include="Service References\BusquedaServRef\ServiceBusqueda1.disco" />
+    <None Include="Service References\DigitalizacionServRef\ServiceDigitalizacion1.disco" />
+    <None Include="Service References\GestionServRef\ServiceGestion1.disco" />
+    <None Include="Service References\PlanGestionServRef\WebGdoc.PlanGestionServRef.PlanGestionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PlanGestionServRef\WebGdoc.PlanGestionServRef.PlanGestionResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Resources\Scripts\jquery-1.9.1.js" />
+    <Content Include="WebPage\Configuracion\frmOpciones.aspx" />
+    <Content Include="WebPage\Inicio\mpFEPCMAC.Master" />
+    <Content Include="WebPage\PlanGestion\frmActividad.aspx" />
+    <Content Include="WebPage\PlanGestion\frmEstrategico.aspx" />
+    <Content Include="WebPage\PlanGestion\frmInforme.aspx" />
+    <Content Include="WebPage\PlanGestion\frmOperativo.aspx" />
+    <Content Include="WebPage\PlanGestion\frmProyecto.aspx" />
+    <Content Include="WebPage\PlanGestion\VisualizarPlanGestion.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{E4F6C17A-993D-430E-995C-97CE376B93F5}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BusquedaServRef\" />
+    <WCFMetadataStorage Include="Service References\DigitalizacionServRef\" />
+    <WCFMetadataStorage Include="Service References\GestionServRef\" />
+    <WCFMetadataStorage Include="Service References\PlanGestionServRef\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="WebPage\Reportes\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>30000</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

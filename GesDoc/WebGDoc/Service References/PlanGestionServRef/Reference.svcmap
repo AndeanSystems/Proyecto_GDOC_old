@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e55b0565-2a75-4109-be20-d413e849eee3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:30001/ServicePlanGestion.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicePlanGestion.xsd" MetadataType="Schema" ID="0364aa35-cfd9-469a-82f4-84fdb21ff368" SourceId="1" SourceUrl="http://localhost:30001/ServicePlanGestion.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicePlanGestion1.xsd" MetadataType="Schema" ID="13118739-e86a-42e7-a281-0d6872a0b2db" SourceId="1" SourceUrl="http://localhost:30001/ServicePlanGestion.svc?xsd=xsd0" />
+    <MetadataFile FileName="PlanGestionService.wsdl" MetadataType="Wsdl" ID="c7a9e600-1a45-4a51-8fad-af96bc205a42" SourceId="1" SourceUrl="http://localhost:30001/ServicePlanGestion.svc?wsdl" />
+    <MetadataFile FileName="ServicePlanGestion2.xsd" MetadataType="Schema" ID="164cdc6b-64ec-41b4-8ddf-0f54f780b742" SourceId="1" SourceUrl="http://localhost:30001/ServicePlanGestion.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicePlanGestion3.xsd" MetadataType="Schema" ID="0ac93b03-6b67-4cf5-b965-ea8c0f2b3daf" SourceId="1" SourceUrl="http://localhost:30001/ServicePlanGestion.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServicePlanGestion.disco" MetadataType="Disco" ID="2da25116-6912-40f5-a9f1-0746cae715d6" SourceId="1" SourceUrl="http://localhost:30001/ServicePlanGestion.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

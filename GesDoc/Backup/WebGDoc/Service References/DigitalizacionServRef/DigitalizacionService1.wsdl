@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="DigitalizacionService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IDigitalizacionService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:30001/ServiceDigitalizacion.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:30001/ServiceDigitalizacion.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:30001/ServiceDigitalizacion.svc?xsd=xsd2" namespace="http://www.yourcompany.com/types/" />
+      <xsd:import schemaLocation="http://localhost:30001/ServiceDigitalizacion.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDigitalizacionService_SetDocDigAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDocDigAdd" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetDocDigAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDocDigAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetDocDigital_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocDigital" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetDocDigital_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocDigitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetDocDigRefAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDocDigRefAdd" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetDocDigRefAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDocDigRefAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetDocDigRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocDigRef" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetDocDigRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocDigRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetListaTipoDoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaTipoDoc" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetListaTipoDoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaTipoDocResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetDocAdj_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDocAdj" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetDocAdj_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDocAdjResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetDocAdj_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocAdj" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetDocAdj_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocAdjResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetAnulaDocAdj_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetAnulaDocAdj" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetAnulaDocAdj_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetAnulaDocAdjResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetDocumentoElectronicoEnviar_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDocumentoElectronicoEnviar" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetDocumentoElectronicoEnviar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDocumentoElectronicoEnviarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetDocElec_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocElec" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetDocElec_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocElecResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetLogOperacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetLogOperacion" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetLogOperacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetLogOperacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetMensajeAlerta_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMensajeAlerta" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetMensajeAlerta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMensajeAlertaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetMensajAlerta_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMensajAlerta" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetMensajAlerta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMensajAlertaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetListMesaVirtual_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListMesaVirtual" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetListMesaVirtual_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListMesaVirtualResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetMesaVirtual_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMesaVirtual" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetMesaVirtual_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMesaVirtualResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetMesaComent_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMesaComent" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_SetMesaComent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMesaComentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetListMesaComent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListMesaComent" />
+  </wsdl:message>
+  <wsdl:message name="IDigitalizacionService_GetListMesaComent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListMesaComentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDigitalizacionService">
+    <wsdl:operation name="SetDocDigAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/SetDocDigAdd" message="tns:IDigitalizacionService_SetDocDigAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/SetDocDigAddResponse" message="tns:IDigitalizacionService_SetDocDigAdd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocDigital">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/GetDocDigital" message="tns:IDigitalizacionService_GetDocDigital_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/GetDocDigitalResponse" message="tns:IDigitalizacionService_GetDocDigital_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDocDigRefAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/SetDocDigRefAdd" message="tns:IDigitalizacionService_SetDocDigRefAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/SetDocDigRefAddResponse" message="tns:IDigitalizacionService_SetDocDigRefAdd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocDigRef">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/GetDocDigRef" message="tns:IDigitalizacionService_GetDocDigRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/GetDocDigRefResponse" message="tns:IDigitalizacionService_GetDocDigRef_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListaTipoDoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/GetListaTipoDoc" message="tns:IDigitalizacionService_GetListaTipoDoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/GetListaTipoDocResponse" message="tns:IDigitalizacionService_GetListaTipoDoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDocAdj">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/SetDocAdj" message="tns:IDigitalizacionService_SetDocAdj_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/SetDocAdjResponse" message="tns:IDigitalizacionService_SetDocAdj_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocAdj">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/GetDocAdj" message="tns:IDigitalizacionService_GetDocAdj_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/GetDocAdjResponse" message="tns:IDigitalizacionService_GetDocAdj_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAnulaDocAdj">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/SetAnulaDocAdj" message="tns:IDigitalizacionService_SetAnulaDocAdj_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/SetAnulaDocAdjResponse" message="tns:IDigitalizacionService_SetAnulaDocAdj_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDocumentoElectronicoEnviar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/SetDocumentoElectronicoEnviar" message="tns:IDigitalizacionService_SetDocumentoElectronicoEnviar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/SetDocumentoElectronicoEnviarResponse" message="tns:IDigitalizacionService_SetDocumentoElectronicoEnviar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocElec">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/GetDocElec" message="tns:IDigitalizacionService_GetDocElec_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/GetDocElecResponse" message="tns:IDigitalizacionService_GetDocElec_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetLogOperacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/SetLogOperacion" message="tns:IDigitalizacionService_SetLogOperacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/SetLogOperacionResponse" message="tns:IDigitalizacionService_SetLogOperacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMensajeAlerta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/SetMensajeAlerta" message="tns:IDigitalizacionService_SetMensajeAlerta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/SetMensajeAlertaResponse" message="tns:IDigitalizacionService_SetMensajeAlerta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMensajAlerta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/GetMensajAlerta" message="tns:IDigitalizacionService_GetMensajAlerta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/GetMensajAlertaResponse" message="tns:IDigitalizacionService_GetMensajAlerta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListMesaVirtual">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/GetListMesaVirtual" message="tns:IDigitalizacionService_GetListMesaVirtual_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/GetListMesaVirtualResponse" message="tns:IDigitalizacionService_GetListMesaVirtual_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMesaVirtual">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/SetMesaVirtual" message="tns:IDigitalizacionService_SetMesaVirtual_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/SetMesaVirtualResponse" message="tns:IDigitalizacionService_SetMesaVirtual_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMesaComent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/SetMesaComent" message="tns:IDigitalizacionService_SetMesaComent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/SetMesaComentResponse" message="tns:IDigitalizacionService_SetMesaComent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListMesaComent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDigitalizacionService/GetListMesaComent" message="tns:IDigitalizacionService_GetListMesaComent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDigitalizacionService/GetListMesaComentResponse" message="tns:IDigitalizacionService_GetListMesaComent_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IDigitalizacionService" type="tns:IDigitalizacionService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IDigitalizacionService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetDocDigAdd">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/SetDocDigAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocDigital">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/GetDocDigital" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDocDigRefAdd">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/SetDocDigRefAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocDigRef">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/GetDocDigRef" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListaTipoDoc">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/GetListaTipoDoc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDocAdj">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/SetDocAdj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocAdj">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/GetDocAdj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAnulaDocAdj">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/SetAnulaDocAdj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDocumentoElectronicoEnviar">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/SetDocumentoElectronicoEnviar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocElec">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/GetDocElec" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetLogOperacion">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/SetLogOperacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMensajeAlerta">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/SetMensajeAlerta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMensajAlerta">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/GetMensajAlerta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListMesaVirtual">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/GetListMesaVirtual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMesaVirtual">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/SetMesaVirtual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMesaComent">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/SetMesaComent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListMesaComent">
+      <soap12:operation soapAction="http://tempuri.org/IDigitalizacionService/GetListMesaComent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DigitalizacionService">
+    <wsdl:port name="WSHttpBinding_IDigitalizacionService" binding="tns:WSHttpBinding_IDigitalizacionService">
+      <soap12:address location="http://localhost:30001/ServiceDigitalizacion.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:30001/ServiceDigitalizacion.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

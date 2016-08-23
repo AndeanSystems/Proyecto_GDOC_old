@@ -1,0 +1,383 @@
+﻿body
+{
+}
+table.Principal
+{
+	width:100%;
+	text-align: left;
+	font-family: Arial;
+	font-size: 20px;
+}
+td.Principal1
+{
+	border-style: solid;
+	border-width: 1pt;
+	border-color: inherit;
+	height: 115px;
+	width: 740px;
+}
+td.Principal2
+{
+	border-style: solid;
+	border-width: 1pt;
+	border-color: inherit;
+	width: 350px;
+	vertical-align:top;
+}
+td.Principal3
+{
+	border-style: solid;
+	border-width: 1pt;
+	border-color: inherit;
+	width: 1090px;
+	height: 345px;
+	vertical-align:top;
+}
+.FontSistema
+{
+	text-align: left;
+	font-family: Arial;
+	font-size: 20px;
+	width: 377px;
+}
+.divTotal
+{
+	font-family: Calibri;
+	font-size: 12px;
+	color: #797979;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 160px;
+	overflow: scroll;
+}
+.divTotal1
+{
+	font-family: Calibri;
+	font-size: 12px;
+	color: #797979;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 128px;
+	overflow: scroll;
+}
+.divAcceso
+{
+	font-family: Calibri;
+	font-size: 12px;
+	color: #797979;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 400px;
+	overflow: scroll;
+}
+.divBandeja
+{
+	font-family: Calibri;
+	font-size: 12px;
+	color: #797979;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 400px;
+	overflow: scroll;
+}
+.divBusqueda
+{
+	font-family: Calibri;
+	font-size: 12px;
+	color: #797979;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 320px;
+	overflow: scroll;
+}
+.divBusquedaPG
+{
+	font-family: Calibri;
+	font-size: 12px;
+	color: #797979;
+	background-color: #FFFFFF;
+	/*width: 100%;*/
+	height: 200px;
+	overflow: scroll;
+}
+.divGrupos
+{
+	font-family: Calibri;
+	font-size: 12px;
+	color: #797979;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 320px;
+	overflow: scroll;
+}
+.divControl
+{
+	font-family: Calibri;
+	font-size: 12px;
+	color: #797979;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 130px;
+	overflow: scroll;
+}
+.panelBorder
+{
+	border: 1px solid #C0C0C0;
+	font-family: Calibri;
+	font-size: 12px;
+	color: #000000;
+}
+.panel
+{
+	font-family: Calibri;
+	font-size: 12px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+.panelAviso
+{
+	font-family: Calibri;
+	font-size: 12px;
+	color: #000000;
+	background-color: #FFFFFF;
+	top: 100px !important;
+}
+
+.Tab
+{
+	width: 100%;
+}
+.TabHeader
+{
+	width: 120px;
+	border: 1px solid #C0C0C0;
+	font-weight: bold;
+	font-family: Calibri;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	text-align: center;
+	color: #999999;
+}
+.TabHeaderSelect
+{
+	width: 120px;
+	border: 1px solid #C0C0C0;
+	font-weight: bold;
+	font-family: Calibri;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #FF0000;
+}
+.label
+{
+	font-family:Calibri;
+	font-size:15px;
+	color:#030303; /*#797979;*/
+}
+.textbox
+{
+    width: 98%;
+    font-family: Calibri;
+    font-size: 12px;
+    color: #000000; /*#797979;*/
+    border: 1px solid #C0C0C0;
+}
+.textboxSegurity
+{
+	width: 95%;
+	font-family: Arial;
+	font-size: 12px;
+	color: #000000; /*#797979;*/
+	border: 1px solid #C0C0C0;
+}
+.textboxMayus
+{
+	width: 99%;
+	font-family: Calibri;
+	font-size: 12px;
+	color: #000000; /*#797979;*/
+	border: 1px solid #C0C0C0;
+	text-transform:uppercase;
+}
+.multiline
+{
+	width: 99%;
+	height: 40px;
+	font-family: Calibri;
+	font-size: 12px;
+	color: #000000; /*#797979;*/
+	border: 1px solid #C0C0C0;
+}
+.dropdownlist
+{
+	width: 98%;
+	font-family: Calibri;
+	font-size: 12px;
+	color: #000000; /*#797979;*/
+	border: 1px solid #C0C0C0;
+}
+.radioButton
+{
+	font-family:Calibri;
+	font-size:12px;
+	color:Black;
+	color: #000000; /*#797979;*/
+}
+.button
+{
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 13px;
+	color: #000000; /*#797979;*/
+	width: 120px;
+	text-align: center;
+}
+.listbox
+{
+	width: 100%;
+	height: 40px;
+	font-family: Calibri;
+	font-size: 12px;
+	color: #000000; /*#797979;*/
+	border: 1px solid #C0C0C0;
+}
+.iframe
+{
+	width: 100%;
+	height: 100%;
+	background-color: #C0C0C0;
+}
+.calendar
+{
+	width: 150px;
+	font-family: Calibri;
+	font-size: 12px;
+	color: #797979;
+	border: 1px solid #C0C0C0;
+}
+.imagen
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+	height: 18px;
+    width: 19px;
+}
+.imagenFirma
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+	height: 50px;
+}
+.htmlEditor
+{
+	width: 99%;
+	height: 300px;
+	font-family: Calibri;
+	font-size: 12px;
+	color: #000000; /*#797979;*/
+	border: 1px solid #C0C0C0;
+}
+.examinar
+{
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 13px;
+	color: #797979;	
+	text-align: center;
+}
+td.FondoEtiqueta
+{
+	width: 90px;
+	background-color: #F0F0F0;
+	text-align:right;
+}
+td.FondoEtiqueta1
+{
+	width: 150px;
+	background-color: #F0F0F0;
+	text-align:right;
+}
+td.FondoEtiqueta2
+{
+	background-color: #F0F0F0;
+	text-align:center;
+}
+td.FondoEtiqueta3
+{
+	width: 150px;
+	background-color: #F0F0F0;
+	text-align:right;
+}
+
+td.FondoCombobox
+{
+	width: 115px;
+	text-align:left;
+}
+td.Fondobutton
+{
+	width: 130px;
+	text-align:center;
+}
+.imgBE
+{
+	width:15px;
+	height:15px;	
+}
+.CabeceraPopup
+{
+	width: 700px;
+	border: 1px solid #CC3300;
+	background-color: #CC3300;
+	color: #FFFFFF;
+	font-family: Calibri;
+	font-size: 14px;
+}
+.CabeceraPopupX
+{
+	width:20px;
+	border: 1px solid #CC3300;
+	background-color: #CC3300;
+	color: #FFFFFF;
+}
+.modalPopup
+{
+	background-color: #E4E4E4;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: capitalize;
+	color: #000000;
+	font-family: Calibri;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+.BackColorTab
+{
+    font-family:Verdana, Arial, Courier New;
+    font-size: 10px;
+    color:Gray;
+    background-color:Silver; 
+}
+        
+.TabHeaderCSS
+{
+     font-family:Verdana, Arial, Courier New;
+     font-size: 10px;
+     text-align: center;
+     cursor: pointer
+}
+.PopupOcultar
+{
+	display:none;
+}
+.PopupMostrar
+{
+	display:run-in;
+}

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <menuItem>
+    <text>Inicio</text>
+    <url>../Inicio/frmEscritorioVirtual.aspx</url>
+    <horizontalalign>center</horizontalalign>
+    <width>100</width>
+    <subMenu>
+      <menuItem>
+        <text>Cambiar Contraseñas</text>
+        <url>../Inicio/frmCambiarClave.aspx</url>
+        <width>130</width>
+        <horizontalalign>left</horizontalalign>
+      </menuItem>
+    </subMenu>
+  </menuItem>
+  <menuItem>
+    <text>|</text>
+  </menuItem>
+  <menuItem>
+    <text>Gestión</text>
+    <horizontalalign>center</horizontalalign>
+    <width>100</width>
+    <subMenu>
+      <menuItem>
+        <text>Bandeja de E/S</text>
+        <url>../Gestion/frmBandejaES.aspx</url>
+        <width>150</width>
+        <horizontalalign>left</horizontalalign>
+      </menuItem>
+      <menuItem>
+        <text>Documento Electrónico</text>
+        <url>../Gestion/frmDocumentoElectronico.aspx</url>
+        <width>150</width>
+        <horizontalalign>left</horizontalalign>
+      </menuItem>
+      <menuItem>
+        <text>Mesa de Trabajo Virtual</text>
+        <url>../Gestion/frmMesaVirtual.aspx</url>
+        <width>150</width>
+        <horizontalalign>left</horizontalalign>
+      </menuItem>
+    </subMenu>
+  </menuItem>
+  <menuItem>
+    <text>|</text>
+  </menuItem>
+  <menuItem>
+    <text>Digitalización</text>
+    <horizontalalign>center</horizontalalign>
+    <width>100</width>
+    <subMenu>
+      <menuItem>
+        <text>Documentos</text>
+        <url>../Digitalizacion/frmDocumentosFisicos.aspx</url>
+        <width>150</width>
+        <horizontalalign>left</horizontalalign>
+      </menuItem>
+      <menuItem>
+        <text>Archivo de Datos</text>
+        <url>../Digitalizacion/frmArchivoDatos.aspx</url>
+        <width>150</width>
+        <horizontalalign>left</horizontalalign>
+      </menuItem>
+    </subMenu>
+  </menuItem>
+  <menuItem>
+    <text>|</text>
+  </menuItem>
+  <menuItem>
+    <text>Búsquedas</text>
+    <horizontalalign>center</horizontalalign>
+    <width>100</width>
+    <subMenu>
+      <menuItem>
+        <text>Documentos Electrónicos</text>
+        <url>../Busquedas/frmDocumentosElectronicos.aspx</url>
+        <width>150</width>
+        <horizontalalign>left</horizontalalign>
+      </menuItem>
+      <menuItem>
+        <text>Documentos Digitales</text>
+        <url>../Busquedas/frmDocumentosDigitales.aspx</url>
+        <width>150</width>
+        <horizontalalign>left</horizontalalign>
+      </menuItem>
+      <menuItem>
+        <text>Mesa de Trabajo Virtual</text>
+        <url>../Busquedas/frmMesaVirtual.aspx</url>
+        <width>150</width>
+        <horizontalalign>left</horizontalalign>
+      </menuItem>
+      <menuItem>
+        <text>Log de Operaciones</text>
+        <url>../Busquedas/frmLogOperaciones.aspx</url>
+        <width>150</width>
+        <horizontalalign>left</horizontalalign>
+      </menuItem>
+    </subMenu>
+  </menuItem>
+  <menuItem>
+    <text>|</text>
+  </menuItem>
+  <menuItem>
+    <text>Configuración</text>
+    <horizontalalign>center</horizontalalign>
+    <width>100</width>
+    <subMenu>
+      <menuItem>
+        <text>Opciones</text>
+        <url>../Configuracion/frmOpciones.aspx</url>
+        <width>150</width>
+        <horizontalalign>left</horizontalalign>
+      </menuItem>
+      <menuItem>
+        <text>Administracion</text>
+        <width>150</width>
+        <horizontalalign>left</horizontalalign>
+        <subMenu>
+          <menuItem>
+            <text>Usuarios</text>
+            <url>../Configuracion/frmUsuarios.aspx</url>
+            <width>150</width>
+            <horizontalalign>left</horizontalalign>
+          </menuItem>
+          <menuItem>
+            <text>Grupos</text>
+            <url>../Configuracion/frmGrupo.aspx</url>
+            <width>150</width>
+            <horizontalalign>left</horizontalalign>
+          </menuItem>
+          <menuItem>
+            <text>Empresa</text>
+            <url>../Configuracion/frmEmpresa.aspx</url>
+            <width>150</width>
+            <horizontalalign>left</horizontalalign>
+          </menuItem>
+          <menuItem>
+            <text>Acceso</text>
+            <url>../Configuracion/frmAcceso.aspx</url>
+            <width>150</width>
+            <horizontalalign>left</horizontalalign>
+          </menuItem>
+        </subMenu>
+      </menuItem>
+    </subMenu>
+  </menuItem>
+  <menuItem>
+    <text>|</text>
+  </menuItem>
+  <menuItem>
+    <text>Cerrar Sesión</text>
+    <url>../../frmInicio.aspx</url>
+    <horizontalalign>center</horizontalalign>
+    <width>100</width>
+  </menuItem>
+  
+</menu>
+
+
+
+

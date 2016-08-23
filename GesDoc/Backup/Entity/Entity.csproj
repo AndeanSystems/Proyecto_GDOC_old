@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4F6C17A-993D-430E-995C-97CE376B93F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Entity</RootNamespace>
+    <AssemblyName>Entity</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\eAccesoSistema.cs" />
+    <Compile Include="Entities\eArea.cs" />
+    <Compile Include="Entities\eAutorizador.cs" />
+    <Compile Include="Entities\eBuscarDocumentos.cs" />
+    <Compile Include="Entities\eBuscarLogOperacion.cs" />
+    <Compile Include="Entities\eCargo.cs" />
+    <Compile Include="Entities\eDocAdj.cs" />
+    <Compile Include="Entities\eDocDig.cs" />
+    <Compile Include="Entities\eDocDigListTD.cs" />
+    <Compile Include="Entities\eDocDigRef.cs" />
+    <Compile Include="Entities\eDocumentoElectronico.cs" />
+    <Compile Include="Entities\eEmpresa.cs" />
+    <Compile Include="Entities\eGrupo.cs" />
+    <Compile Include="Entities\eLogOperacion.cs" />
+    <Compile Include="Entities\eMensajeAlerta.cs" />
+    <Compile Include="Entities\eMesaVirtual.cs" />
+    <Compile Include="Entities\eModuloPagina.cs" />
+    <Compile Include="Entities\eOperaciones.cs" />
+    <Compile Include="Entities\eParticipante.cs" />
+    <Compile Include="Entities\ePersonal.cs" />
+    <Compile Include="Entities\ePlanGestion.cs" />
+    <Compile Include="Entities\eRol.cs" />
+    <Compile Include="Entities\eTipoAcceso.cs" />
+    <Compile Include="Entities\eTipoCargo.cs" />
+    <Compile Include="Entities\eTipoEvento.cs" />
+    <Compile Include="Entities\eTipoOperacion.cs" />
+    <Compile Include="Entities\eTipoParticipacion.cs" />
+    <Compile Include="Entities\eTipoPrioridad.cs" />
+    <Compile Include="Entities\eTipoUsuario.cs" />
+    <Compile Include="Entities\eUbigeo.cs" />
+    <Compile Include="Entities\eUsuario.cs" />
+    <Compile Include="Entities\eUsuarioGrupo.cs" />
+    <Compile Include="Entities\eVariable.cs" />
+    <Compile Include="Interfaces\IAccesoSistema.cs" />
+    <Compile Include="Interfaces\IAutorizador.cs" />
+    <Compile Include="Interfaces\IBandeja.cs" />
+    <Compile Include="Interfaces\IBandejaMV.cs" />
+    <Compile Include="Interfaces\IBuscarDocumentos.cs" />
+    <Compile Include="Interfaces\IBuscarLogOperacion.cs" />
+    <Compile Include="Interfaces\IComentMesa.cs" />
+    <Compile Include="Interfaces\IConsAutorizador.cs" />
+    <Compile Include="Interfaces\IConsComenMV.cs" />
+    <Compile Include="Interfaces\IConsMenuUsua.cs" />
+    <Compile Include="Interfaces\IConsModuPag.cs" />
+    <Compile Include="Interfaces\IDocAdj.cs" />
+    <Compile Include="Interfaces\IDocDig.cs" />
+    <Compile Include="Interfaces\IDocDigRef.cs" />
+    <Compile Include="Interfaces\IDocumentoElectronico.cs" />
+    <Compile Include="Interfaces\IEmpresa.cs" />
+    <Compile Include="Interfaces\IGrupo.cs" />
+    <Compile Include="Interfaces\IGrupoUsuarios.cs" />
+    <Compile Include="Interfaces\ILDocDig.cs" />
+    <Compile Include="Interfaces\ILDocDigRef.cs" />
+    <Compile Include="Interfaces\ILDocElec.cs" />
+    <Compile Include="Interfaces\IListaDescripcion.cs" />
+    <Compile Include="Interfaces\IListMensAler.cs" />
+    <Compile Include="Interfaces\IListUsuarioGr.cs" />
+    <Compile Include="Interfaces\ILogOperacion.cs" />
+    <Compile Include="Interfaces\ILUserPart.cs" />
+    <Compile Include="Interfaces\IMensajeAlerta.cs" />
+    <Compile Include="Interfaces\IMesaVirtual.cs" />
+    <Compile Include="Interfaces\IOperaciones.cs" />
+    <Compile Include="Interfaces\IPersonal.cs" />
+    <Compile Include="Interfaces\IPlanGestion.cs" />
+    <Compile Include="Interfaces\IRol.cs" />
+    <Compile Include="Interfaces\ITipoAcceso.cs" />
+    <Compile Include="Interfaces\ITipoArea.cs" />
+    <Compile Include="Interfaces\ITipoCargo.cs" />
+    <Compile Include="Interfaces\ITipoEvento.cs" />
+    <Compile Include="Interfaces\ITipoGrupo.cs" />
+    <Compile Include="Interfaces\ITipoMesaVirtual.cs" />
+    <Compile Include="Interfaces\ITipoOperacion.cs" />
+    <Compile Include="Interfaces\ITipoParticip.cs" />
+    <Compile Include="Interfaces\ITipoPrioridad.cs" />
+    <Compile Include="Interfaces\ITipoUsuario.cs" />
+    <Compile Include="Interfaces\IUbigeo.cs" />
+    <Compile Include="Interfaces\IUsuarioGrupo.cs" />
+    <Compile Include="Interfaces\IUsuarioParticipante.cs" />
+    <Compile Include="Interfaces\IUsuarioPer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

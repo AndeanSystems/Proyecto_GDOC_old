@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="PlanGestionService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IPlanGestionService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:30001/ServicePlanGestion.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:30001/ServicePlanGestion.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:30001/ServicePlanGestion.svc?xsd=xsd2" namespace="http://www.yourcompany.com/types/" />
+      <xsd:import schemaLocation="http://localhost:30001/ServicePlanGestion.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPlanGestionService_SetObetivoEstrategico_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetObetivoEstrategico" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_SetObetivoEstrategico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetObetivoEstrategicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_GetObetivoEstrategico_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObetivoEstrategico" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_GetObetivoEstrategico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObetivoEstrategicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_SetObetivoOperativo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetObetivoOperativo" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_SetObetivoOperativo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetObetivoOperativoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_GetObetivoOperativo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObetivoOperativo" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_GetObetivoOperativo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObetivoOperativoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_SetProyecto_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetProyecto" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_SetProyecto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetProyectoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_GetProyecto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProyecto" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_GetProyecto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProyectoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_SetActividad_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetActividad" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_SetActividad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetActividadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_GetActividad_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActividad" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_GetActividad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActividadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_SetComentarioAvance_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetComentarioAvance" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_SetComentarioAvance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetComentarioAvanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_GetComentarioAvance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComentarioAvance" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_GetComentarioAvance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComentarioAvanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_GetInforme_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInforme" />
+  </wsdl:message>
+  <wsdl:message name="IPlanGestionService_GetInforme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInformeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPlanGestionService">
+    <wsdl:operation name="SetObetivoEstrategico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanGestionService/SetObetivoEstrategico" message="tns:IPlanGestionService_SetObetivoEstrategico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanGestionService/SetObetivoEstrategicoResponse" message="tns:IPlanGestionService_SetObetivoEstrategico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObetivoEstrategico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanGestionService/GetObetivoEstrategico" message="tns:IPlanGestionService_GetObetivoEstrategico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanGestionService/GetObetivoEstrategicoResponse" message="tns:IPlanGestionService_GetObetivoEstrategico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetObetivoOperativo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanGestionService/SetObetivoOperativo" message="tns:IPlanGestionService_SetObetivoOperativo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanGestionService/SetObetivoOperativoResponse" message="tns:IPlanGestionService_SetObetivoOperativo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObetivoOperativo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanGestionService/GetObetivoOperativo" message="tns:IPlanGestionService_GetObetivoOperativo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanGestionService/GetObetivoOperativoResponse" message="tns:IPlanGestionService_GetObetivoOperativo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetProyecto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanGestionService/SetProyecto" message="tns:IPlanGestionService_SetProyecto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanGestionService/SetProyectoResponse" message="tns:IPlanGestionService_SetProyecto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProyecto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanGestionService/GetProyecto" message="tns:IPlanGestionService_GetProyecto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanGestionService/GetProyectoResponse" message="tns:IPlanGestionService_GetProyecto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetActividad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanGestionService/SetActividad" message="tns:IPlanGestionService_SetActividad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanGestionService/SetActividadResponse" message="tns:IPlanGestionService_SetActividad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActividad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanGestionService/GetActividad" message="tns:IPlanGestionService_GetActividad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanGestionService/GetActividadResponse" message="tns:IPlanGestionService_GetActividad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetComentarioAvance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanGestionService/SetComentarioAvance" message="tns:IPlanGestionService_SetComentarioAvance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanGestionService/SetComentarioAvanceResponse" message="tns:IPlanGestionService_SetComentarioAvance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComentarioAvance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanGestionService/GetComentarioAvance" message="tns:IPlanGestionService_GetComentarioAvance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanGestionService/GetComentarioAvanceResponse" message="tns:IPlanGestionService_GetComentarioAvance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInforme">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanGestionService/GetInforme" message="tns:IPlanGestionService_GetInforme_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanGestionService/GetInformeResponse" message="tns:IPlanGestionService_GetInforme_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IPlanGestionService" type="tns:IPlanGestionService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IPlanGestionService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetObetivoEstrategico">
+      <soap12:operation soapAction="http://tempuri.org/IPlanGestionService/SetObetivoEstrategico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObetivoEstrategico">
+      <soap12:operation soapAction="http://tempuri.org/IPlanGestionService/GetObetivoEstrategico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetObetivoOperativo">
+      <soap12:operation soapAction="http://tempuri.org/IPlanGestionService/SetObetivoOperativo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObetivoOperativo">
+      <soap12:operation soapAction="http://tempuri.org/IPlanGestionService/GetObetivoOperativo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetProyecto">
+      <soap12:operation soapAction="http://tempuri.org/IPlanGestionService/SetProyecto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProyecto">
+      <soap12:operation soapAction="http://tempuri.org/IPlanGestionService/GetProyecto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetActividad">
+      <soap12:operation soapAction="http://tempuri.org/IPlanGestionService/SetActividad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActividad">
+      <soap12:operation soapAction="http://tempuri.org/IPlanGestionService/GetActividad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetComentarioAvance">
+      <soap12:operation soapAction="http://tempuri.org/IPlanGestionService/SetComentarioAvance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComentarioAvance">
+      <soap12:operation soapAction="http://tempuri.org/IPlanGestionService/GetComentarioAvance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInforme">
+      <soap12:operation soapAction="http://tempuri.org/IPlanGestionService/GetInforme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PlanGestionService">
+    <wsdl:port name="WSHttpBinding_IPlanGestionService" binding="tns:WSHttpBinding_IPlanGestionService">
+      <soap12:address location="http://localhost:30001/ServicePlanGestion.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:30001/ServicePlanGestion.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

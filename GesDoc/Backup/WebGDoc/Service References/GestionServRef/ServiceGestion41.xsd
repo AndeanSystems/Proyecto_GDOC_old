@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.yourcompany.com/types/" elementFormDefault="qualified" targetNamespace="http://www.yourcompany.com/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:30001/ServiceGestion.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="UsuarioPerRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrUsuarioPer" nillable="true" type="tns:eUsuario" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UsuarioPerRequest" nillable="true" type="tns:UsuarioPerRequest" />
+  <xs:complexType name="RequestBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccessToken" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Action" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientTag" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="LoadOptions" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="RequestId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RequestBase" nillable="true" type="tns:RequestBase" />
+  <xs:complexType name="eUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApePers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClasUsu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodiCnx" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodiRol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodiTipUsu" type="xs:long" />
+      <xs:element minOccurs="0" name="Codigo" type="xs:long" />
+      <xs:element minOccurs="0" name="CodigoPersona" type="xs:long" />
+      <xs:element minOccurs="0" name="DescArea" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescCarg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpiClav" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpiFirm" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechExpiClav" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechExpiFirm" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaUltimoAcceso" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirmaElectronica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdeUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IntentoErradoFirma" type="xs:short" />
+      <xs:element minOccurs="0" name="IntentoErradoPasword" type="xs:short" />
+      <xs:element minOccurs="0" name="IntentoErradosPasword" type="xs:short" />
+      <xs:element minOccurs="0" name="NombPers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Participante" nillable="true" type="tns:eParticipante" />
+      <xs:element minOccurs="0" name="Pasword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pers" nillable="true" type="tns:ePersonal" />
+      <xs:element minOccurs="0" name="TermUsu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuCrea" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eUsuario" nillable="true" type="tns:eUsuario" />
+  <xs:complexType name="eParticipante">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApruOper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodiOper" type="xs:long" />
+      <xs:element minOccurs="0" name="CodiUsu" type="xs:long" />
+      <xs:element minOccurs="0" name="CodiUsuPart" type="xs:long" />
+      <xs:element minOccurs="0" name="ConfLect" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnviNoti" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Envio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstaUsuaPart" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechNoti" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Reenvio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoOper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPart" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eParticipante" nillable="true" type="tns:eParticipante" />
+  <xs:complexType name="ePersonal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnexPers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApePers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CeluPers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClasPers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodiArea" type="xs:long" />
+      <xs:element minOccurs="0" name="CodiCarg" type="xs:long" />
+      <xs:element minOccurs="0" name="CodiTipUsu" type="xs:long" />
+      <xs:element minOccurs="0" name="CodigoPersona" type="xs:long" />
+      <xs:element minOccurs="0" name="DNI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DirePers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmaiPers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmaiTrab" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstaPers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechNac" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NombPers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RucEmpr" type="xs:long" />
+      <xs:element minOccurs="0" name="SexoPers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelePers" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ePersonal" nillable="true" type="tns:ePersonal" />
+  <xs:complexType name="UsuarioResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddUser" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UsuarioResponse" nillable="true" type="tns:UsuarioResponse" />
+  <xs:complexType name="ResponseBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Acknowledge" type="tns:AcknowledgeType" />
+      <xs:element minOccurs="0" name="Build" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorrelationId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReservationExpires" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReservationId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowsAffected" type="xs:int" />
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseBase" nillable="true" type="tns:ResponseBase" />
+  <xs:simpleType name="AcknowledgeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Failure" />
+      <xs:enumeration value="Success" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AcknowledgeType" nillable="true" type="tns:AcknowledgeType" />
+  <xs:complexType name="EmpresaRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrEmpresa" nillable="true" type="tns:eEmpresa" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmpresaRequest" nillable="true" type="tns:EmpresaRequest" />
+  <xs:complexType name="eEmpresa">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodiUbig" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodiUsu" type="xs:long" />
+      <xs:element minOccurs="0" name="DireEmpr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmprId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstEmpr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechRegi" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RazoSoci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RucEmpr" type="xs:long" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eEmpresa" nillable="true" type="tns:eEmpresa" />
+  <xs:complexType name="LEmpresaResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EmpresaLista" nillable="true" type="tns:ArrayOfeEmpresa" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LEmpresaResponse" nillable="true" type="tns:LEmpresaResponse" />
+  <xs:complexType name="ArrayOfeEmpresa">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eEmpresa" nillable="true" type="tns:eEmpresa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeEmpresa" nillable="true" type="tns:ArrayOfeEmpresa" />
+  <xs:complexType name="AccesoRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrAcceso" nillable="true" type="tns:eAccesoSistema" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AccesoRequest" nillable="true" type="tns:AccesoRequest" />
+  <xs:complexType name="eAccesoSistema">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codigo" type="xs:long" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Pagina" nillable="true" type="tns:eModuloPagina" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="tns:eUsuario" />
+      <xs:element minOccurs="0" name="UsuarioCreacion" nillable="true" type="tns:eUsuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eAccesoSistema" nillable="true" type="tns:eAccesoSistema" />
+  <xs:complexType name="eModuloPagina">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codigo" type="xs:long" />
+      <xs:element minOccurs="0" name="CodigoPadre" type="xs:long" />
+      <xs:element minOccurs="0" name="Comentario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DireccionURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Modulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eModuloPagina" nillable="true" type="tns:eModuloPagina" />
+  <xs:complexType name="LAccesoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaAcceso" nillable="true" type="tns:ArrayOfeAccesoSistema" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LAccesoResponse" nillable="true" type="tns:LAccesoResponse" />
+  <xs:complexType name="ArrayOfeAccesoSistema">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eAccesoSistema" nillable="true" type="tns:eAccesoSistema" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeAccesoSistema" nillable="true" type="tns:ArrayOfeAccesoSistema" />
+  <xs:complexType name="TipoAccesoRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrTipoAcceso" nillable="true" type="tns:eTipoAcceso" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoAccesoRequest" nillable="true" type="tns:TipoAccesoRequest" />
+  <xs:complexType name="eTipoAcceso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DescAcc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstAcc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoAcc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eTipoAcceso" nillable="true" type="tns:eTipoAcceso" />
+  <xs:complexType name="TipoAccesoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaTipoAcceso" nillable="true" type="tns:ArrayOfeTipoAcceso" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoAccesoResponse" nillable="true" type="tns:TipoAccesoResponse" />
+  <xs:complexType name="ArrayOfeTipoAcceso">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eTipoAcceso" nillable="true" type="tns:eTipoAcceso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeTipoAcceso" nillable="true" type="tns:ArrayOfeTipoAcceso" />
+  <xs:complexType name="TipoPrioridadRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrTipoPrioridad" nillable="true" type="tns:eTipoPrioridad" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoPrioridadRequest" nillable="true" type="tns:TipoPrioridadRequest" />
+  <xs:complexType name="eTipoPrioridad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AbreTipoPrio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodiTipoPrio" type="xs:long" />
+      <xs:element minOccurs="0" name="DescTipoPrio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstaTipoPrio" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eTipoPrioridad" nillable="true" type="tns:eTipoPrioridad" />
+  <xs:complexType name="TipoPrioridadResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaTipoPrioridad" nillable="true" type="tns:ArrayOfeTipoPrioridad" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoPrioridadResponse" nillable="true" type="tns:TipoPrioridadResponse" />
+  <xs:complexType name="ArrayOfeTipoPrioridad">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eTipoPrioridad" nillable="true" type="tns:eTipoPrioridad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeTipoPrioridad" nillable="true" type="tns:ArrayOfeTipoPrioridad" />
+  <xs:complexType name="EmpresaResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddEmpresa" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmpresaResponse" nillable="true" type="tns:EmpresaResponse" />
+  <xs:complexType name="TipoParticipRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrTipoPartic" nillable="true" type="tns:eTipoParticipacion" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoParticipRequest" nillable="true" type="tns:TipoParticipRequest" />
+  <xs:complexType name="eTipoParticipacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodiTipoPart" type="xs:int" />
+      <xs:element minOccurs="0" name="DescParticip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstTipoParticipacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoParticip" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eTipoParticipacion" nillable="true" type="tns:eTipoParticipacion" />
+  <xs:complexType name="TipoParticipResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaParticip" nillable="true" type="tns:ArrayOfeTipoParticipacion" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoParticipResponse" nillable="true" type="tns:TipoParticipResponse" />
+  <xs:complexType name="ArrayOfeTipoParticipacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eTipoParticipacion" nillable="true" type="tns:eTipoParticipacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeTipoParticipacion" nillable="true" type="tns:ArrayOfeTipoParticipacion" />
+  <xs:complexType name="TipoEventoRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrTipoEvento" nillable="true" type="tns:eTipoEvento" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoEventoRequest" nillable="true" type="tns:TipoEventoRequest" />
+  <xs:complexType name="eTipoEvento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodiEven" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescEven" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstTipoEvento" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eTipoEvento" nillable="true" type="tns:eTipoEvento" />
+  <xs:complexType name="TipoEventoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaEvento" nillable="true" type="tns:ArrayOfeTipoEvento" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoEventoResponse" nillable="true" type="tns:TipoEventoResponse" />
+  <xs:complexType name="ArrayOfeTipoEvento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eTipoEvento" nillable="true" type="tns:eTipoEvento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeTipoEvento" nillable="true" type="tns:ArrayOfeTipoEvento" />
+  <xs:complexType name="TipoOperacionRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrTipoOper" nillable="true" type="tns:eTipoOperacion" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoOperacionRequest" nillable="true" type="tns:TipoOperacionRequest" />
+  <xs:complexType name="eTipoOperacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodiTipoOper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescTipoOper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstTipoOperacion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eTipoOperacion" nillable="true" type="tns:eTipoOperacion" />
+  <xs:complexType name="TipoOperacionResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListOperacion" nillable="true" type="tns:ArrayOfeTipoOperacion" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoOperacionResponse" nillable="true" type="tns:TipoOperacionResponse" />
+  <xs:complexType name="ArrayOfeTipoOperacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eTipoOperacion" nillable="true" type="tns:eTipoOperacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeTipoOperacion" nillable="true" type="tns:ArrayOfeTipoOperacion" />
+  <xs:complexType name="RolRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrRol" nillable="true" type="tns:eRol" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RolRequest" nillable="true" type="tns:RolRequest" />
+  <xs:complexType name="eRol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodiRol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescRol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstTipoRol" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eRol" nillable="true" type="tns:eRol" />
+  <xs:complexType name="RolResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaRol" nillable="true" type="tns:ArrayOfeRol" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RolResponse" nillable="true" type="tns:RolResponse" />
+  <xs:complexType name="ArrayOfeRol">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eRol" nillable="true" type="tns:eRol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeRol" nillable="true" type="tns:ArrayOfeRol" />
+  <xs:complexType name="TipoCargoRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrTipoCargo" nillable="true" type="tns:eTipoCargo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoCargoRequest" nillable="true" type="tns:TipoCargoRequest" />
+  <xs:complexType name="eTipoCargo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodiCarg" type="xs:long" />
+      <xs:element minOccurs="0" name="DescCarg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstCargo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eTipoCargo" nillable="true" type="tns:eTipoCargo" />
+  <xs:complexType name="TipoCargoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaTipoCargo" nillable="true" type="tns:ArrayOfeTipoCargo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoCargoResponse" nillable="true" type="tns:TipoCargoResponse" />
+  <xs:complexType name="ArrayOfeTipoCargo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eTipoCargo" nillable="true" type="tns:eTipoCargo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeTipoCargo" nillable="true" type="tns:ArrayOfeTipoCargo" />
+  <xs:complexType name="TipoAreaRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrTipoArea" nillable="true" type="tns:eArea" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoAreaRequest" nillable="true" type="tns:TipoAreaRequest" />
+  <xs:complexType name="eArea">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AbreAre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodiAre" type="xs:long" />
+      <xs:element minOccurs="0" name="DescAre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstaAre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eArea" nillable="true" type="tns:eArea" />
+  <xs:complexType name="TipoAreaResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaTipoArea" nillable="true" type="tns:ArrayOfeArea" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoAreaResponse" nillable="true" type="tns:TipoAreaResponse" />
+  <xs:complexType name="ArrayOfeArea">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eArea" nillable="true" type="tns:eArea" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeArea" nillable="true" type="tns:ArrayOfeArea" />
+  <xs:complexType name="TipoGrupoRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrTipoGrupo" nillable="true" type="tns:eGrupo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoGrupoRequest" nillable="true" type="tns:TipoGrupoRequest" />
+  <xs:complexType name="eGrupo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodiGrup" type="xs:long" />
+      <xs:element minOccurs="0" name="ComeGrup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstGrup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechCrea" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NombGrup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuCrea" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioGrupo" nillable="true" type="tns:eUsuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eGrupo" nillable="true" type="tns:eGrupo" />
+  <xs:complexType name="TipoGrupoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaTipoGrupo" nillable="true" type="tns:ArrayOfeGrupo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoGrupoResponse" nillable="true" type="tns:TipoGrupoResponse" />
+  <xs:complexType name="ArrayOfeGrupo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eGrupo" nillable="true" type="tns:eGrupo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeGrupo" nillable="true" type="tns:ArrayOfeGrupo" />
+  <xs:complexType name="TipoUsuarioRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrTipoUsuario" nillable="true" type="tns:eTipoUsuario" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoUsuarioRequest" nillable="true" type="tns:TipoUsuarioRequest" />
+  <xs:complexType name="eTipoUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AbreTipUsu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodiTipUsu" type="xs:long" />
+      <xs:element minOccurs="0" name="DescTipUsu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstaTipUsu" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eTipoUsuario" nillable="true" type="tns:eTipoUsuario" />
+  <xs:complexType name="TipoUsuarioResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaTipoUsuario" nillable="true" type="tns:ArrayOfeTipoUsuario" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TipoUsuarioResponse" nillable="true" type="tns:TipoUsuarioResponse" />
+  <xs:complexType name="ArrayOfeTipoUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eTipoUsuario" nillable="true" type="tns:eTipoUsuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeTipoUsuario" nillable="true" type="tns:ArrayOfeTipoUsuario" />
+  <xs:complexType name="AutorizaRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrAutoriza" nillable="true" type="tns:eAutorizador" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AutorizaRequest" nillable="true" type="tns:AutorizaRequest" />
+  <xs:complexType name="eAutorizador">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodiOper" type="xs:long" />
+      <xs:element minOccurs="0" name="CodiUsuPart" type="xs:long" />
+      <xs:element minOccurs="0" name="ComeUsuAuto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstaAuto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechUsuAuto" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RespUsuAuto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoOper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="tns:eUsuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eAutorizador" nillable="true" type="tns:eAutorizador" />
+  <xs:complexType name="AutorizaResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddAutoriza" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AutorizaResponse" nillable="true" type="tns:AutorizaResponse" />
+  <xs:complexType name="UsuarioPerResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaUsuarioPer" nillable="true" type="tns:ArrayOfeUsuario" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UsuarioPerResponse" nillable="true" type="tns:UsuarioPerResponse" />
+  <xs:complexType name="ArrayOfeUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eUsuario" nillable="true" type="tns:eUsuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeUsuario" nillable="true" type="tns:ArrayOfeUsuario" />
+  <xs:complexType name="UsuParticipRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrUsuPart" nillable="true" type="tns:eParticipante" />
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ListCodiOper" nillable="true" type="q2:ArrayOflong" />
+          <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ListCodiUsu" nillable="true" type="q3:ArrayOflong" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UsuParticipRequest" nillable="true" type="tns:UsuParticipRequest" />
+  <xs:complexType name="UsuParticipResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddUsuPartip" type="xs:long" />
+          <xs:element minOccurs="0" name="UpdateUsuPartip" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UsuParticipResponse" nillable="true" type="tns:UsuParticipResponse" />
+  <xs:complexType name="LUserParticResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaUsuPart" nillable="true" type="tns:ArrayOfeParticipante" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LUserParticResponse" nillable="true" type="tns:LUserParticResponse" />
+  <xs:complexType name="ArrayOfeParticipante">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eParticipante" nillable="true" type="tns:eParticipante" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeParticipante" nillable="true" type="tns:ArrayOfeParticipante" />
+  <xs:complexType name="ListaDescRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrDesList" nillable="true" type="tns:eVariable" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListaDescRequest" nillable="true" type="tns:ListaDescRequest" />
+  <xs:complexType name="eVariable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodUsu" type="xs:long" />
+      <xs:element minOccurs="0" name="Codigo" type="xs:long" />
+      <xs:element minOccurs="0" name="Descrip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numdoc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eVariable" nillable="true" type="tns:eVariable" />
+  <xs:complexType name="ListaDescResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListDesc" nillable="true" type="tns:ArrayOfeVariable" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListaDescResponse" nillable="true" type="tns:ListaDescResponse" />
+  <xs:complexType name="ArrayOfeVariable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eVariable" nillable="true" type="tns:eVariable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeVariable" nillable="true" type="tns:ArrayOfeVariable" />
+  <xs:complexType name="OperacionRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrOper" nillable="true" type="tns:eOperaciones" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OperacionRequest" nillable="true" type="tns:OperacionRequest" />
+  <xs:complexType name="eOperaciones">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcceOper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AsunOper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Asunto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodUsu" type="xs:long" />
+      <xs:element minOccurs="0" name="CodiOper" type="xs:long" />
+      <xs:element minOccurs="0" name="Fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdeUsu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumOper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Periodo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrioDoc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoComu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoOper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPart" type="xs:int" />
+      <xs:element minOccurs="0" name="Type" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eOperaciones" nillable="true" type="tns:eOperaciones" />
+  <xs:complexType name="OperacionResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="OperacionLista" nillable="true" type="tns:ArrayOfeOperaciones" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OperacionResponse" nillable="true" type="tns:OperacionResponse" />
+  <xs:complexType name="ArrayOfeOperaciones">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eOperaciones" nillable="true" type="tns:eOperaciones" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeOperaciones" nillable="true" type="tns:ArrayOfeOperaciones" />
+  <xs:complexType name="UsuarioGrupoRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrUsuarioGrupo" nillable="true" type="tns:eUsuarioGrupo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UsuarioGrupoRequest" nillable="true" type="tns:UsuarioGrupoRequest" />
+  <xs:complexType name="eUsuarioGrupo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodiUsuGrup" type="xs:long" />
+      <xs:element minOccurs="0" name="EstUsuGrup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechCrea" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Grupo" nillable="true" type="tns:eGrupo" />
+      <xs:element minOccurs="0" name="UsuCrea" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="tns:eUsuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eUsuarioGrupo" nillable="true" type="tns:eUsuarioGrupo" />
+  <xs:complexType name="UsuarioGrupoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="UsuarioGrupoLista" nillable="true" type="tns:ArrayOfeUsuarioGrupo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UsuarioGrupoResponse" nillable="true" type="tns:UsuarioGrupoResponse" />
+  <xs:complexType name="ArrayOfeUsuarioGrupo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eUsuarioGrupo" nillable="true" type="tns:eUsuarioGrupo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeUsuarioGrupo" nillable="true" type="tns:ArrayOfeUsuarioGrupo" />
+  <xs:complexType name="LUserAutoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AutorizaList" nillable="true" type="tns:ArrayOfeAutorizador" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LUserAutoResponse" nillable="true" type="tns:LUserAutoResponse" />
+  <xs:complexType name="ArrayOfeAutorizador">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eAutorizador" nillable="true" type="tns:eAutorizador" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeAutorizador" nillable="true" type="tns:ArrayOfeAutorizador" />
+  <xs:complexType name="GrupoUsuarioResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="GrupoUsuarioAdd" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GrupoUsuarioResponse" nillable="true" type="tns:GrupoUsuarioResponse" />
+  <xs:complexType name="GrupoRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrGrupo" nillable="true" type="tns:eGrupo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GrupoRequest" nillable="true" type="tns:GrupoRequest" />
+  <xs:complexType name="GrupoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddGrupo" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GrupoResponse" nillable="true" type="tns:GrupoResponse" />
+  <xs:complexType name="ConsModPagRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrModPag" nillable="true" type="tns:eModuloPagina" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConsModPagRequest" nillable="true" type="tns:ConsModPagRequest" />
+  <xs:complexType name="ConsModPagResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaModPag" nillable="true" type="tns:ArrayOfeModuloPagina" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConsModPagResponse" nillable="true" type="tns:ConsModPagResponse" />
+  <xs:complexType name="ArrayOfeModuloPagina">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eModuloPagina" nillable="true" type="tns:eModuloPagina" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfeModuloPagina" nillable="true" type="tns:ArrayOfeModuloPagina" />
+  <xs:complexType name="AccesoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddAcceso" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AccesoResponse" nillable="true" type="tns:AccesoResponse" />
+  <xs:complexType name="PersonalRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrPersonal" nillable="true" type="tns:ePersonal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PersonalRequest" nillable="true" type="tns:PersonalRequest" />
+  <xs:complexType name="PersonalResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddPersonal" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PersonalResponse" nillable="true" type="tns:PersonalResponse" />
+</xs:schema>

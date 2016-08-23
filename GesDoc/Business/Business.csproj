@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97F8789D-30B7-4101-A4C1-C575DDB259AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Business</RootNamespace>
+    <AssemblyName>Business</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bAccesoSistema.cs" />
+    <Compile Include="bAutorizador.cs" />
+    <Compile Include="bBandeja.cs" />
+    <Compile Include="bBandejaMV.cs" />
+    <Compile Include="bBuscarDocumentos.cs" />
+    <Compile Include="bBuscarLogOperacion.cs" />
+    <Compile Include="bComentMesa.cs" />
+    <Compile Include="bConsAutorizador.cs" />
+    <Compile Include="bConsComenMV.cs" />
+    <Compile Include="bConsMenuUsua.cs" />
+    <Compile Include="bConsModuPag.cs" />
+    <Compile Include="bDocAdj.cs" />
+    <Compile Include="bDocDig.cs" />
+    <Compile Include="bDocDigRef.cs" />
+    <Compile Include="bDocDigTD.cs" />
+    <Compile Include="bDocumentoElectronico.cs" />
+    <Compile Include="bEmpresa.cs" />
+    <Compile Include="bGrupo.cs" />
+    <Compile Include="bGrupoUsuarios.cs" />
+    <Compile Include="bInserMesaVirtual.cs" />
+    <Compile Include="bLDocDig.cs" />
+    <Compile Include="bLDocDigRef.cs" />
+    <Compile Include="bLDocElec.cs" />
+    <Compile Include="bListaDescripcion.cs" />
+    <Compile Include="bListMensAler.cs" />
+    <Compile Include="bListUsuarioGr.cs" />
+    <Compile Include="bLogOperacion.cs" />
+    <Compile Include="bLUserPart.cs" />
+    <Compile Include="bMensajeAlerta.cs" />
+    <Compile Include="bMesaVirtual.cs" />
+    <Compile Include="bOperacion.cs" />
+    <Compile Include="bPersonal.cs" />
+    <Compile Include="bPlanGestion.cs" />
+    <Compile Include="bRol.cs" />
+    <Compile Include="bTipoAcceso.cs" />
+    <Compile Include="bTipoArea.cs" />
+    <Compile Include="bTipoCargo.cs" />
+    <Compile Include="bTipoEvento.cs" />
+    <Compile Include="bTipoGrupo.cs" />
+    <Compile Include="bTipoMesaVirtual.cs" />
+    <Compile Include="bTipoOperacion.cs" />
+    <Compile Include="bTipoParticip.cs" />
+    <Compile Include="bTipoPrioridad.cs" />
+    <Compile Include="bTipoUsuario.cs" />
+    <Compile Include="bUbigeo.cs" />
+    <Compile Include="bUsuarioGrupo.cs" />
+    <Compile Include="bUsuarioParticipante.cs" />
+    <Compile Include="bUsuarioPer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{D290E2C1-514D-4863-B33C-5282CF64EDB4}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{9A78BA61-D282-466A-8E4A-AB1B637AB4E7}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{E4F6C17A-993D-430E-995C-97CE376B93F5}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

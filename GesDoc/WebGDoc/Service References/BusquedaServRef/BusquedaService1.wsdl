@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="BusquedaService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IBusquedaService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:30001/ServiceBusqueda.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:30001/ServiceBusqueda.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:30001/ServiceBusqueda.svc?xsd=xsd2" namespace="http://www.yourcompany.com/types/" />
+      <xsd:import schemaLocation="http://localhost:30001/ServiceBusqueda.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:30001/ServiceBusqueda.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Service.Message.Resquest_Response" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBusquedaService_GetDocumentoDigital_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentoDigital" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetDocumentoDigital_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentoDigitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetDocumentoElectronico_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentoElectronico" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetDocumentoElectronico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentoElectronicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetMesaVirtual_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMesaVirtual" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetMesaVirtual_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMesaVirtualResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetBandejaMV_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBandejaMV" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetBandejaMV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBandejaMVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetBandejaDoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBandejaDoc" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetBandejaDoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBandejaDocResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetTipoMesaVirtual_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoMesaVirtual" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetTipoMesaVirtual_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoMesaVirtualResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetBuscarLogOper_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuscarLogOper" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetBuscarLogOper_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuscarLogOperResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetDocumentoAdjunto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentoAdjunto" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetDocumentoAdjunto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentoAdjuntoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetUbigeo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUbigeo" />
+  </wsdl:message>
+  <wsdl:message name="IBusquedaService_GetUbigeo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUbigeoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBusquedaService">
+    <wsdl:operation name="GetDocumentoDigital">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusquedaService/GetDocumentoDigital" message="tns:IBusquedaService_GetDocumentoDigital_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusquedaService/GetDocumentoDigitalResponse" message="tns:IBusquedaService_GetDocumentoDigital_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentoElectronico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusquedaService/GetDocumentoElectronico" message="tns:IBusquedaService_GetDocumentoElectronico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusquedaService/GetDocumentoElectronicoResponse" message="tns:IBusquedaService_GetDocumentoElectronico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMesaVirtual">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusquedaService/GetMesaVirtual" message="tns:IBusquedaService_GetMesaVirtual_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusquedaService/GetMesaVirtualResponse" message="tns:IBusquedaService_GetMesaVirtual_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBandejaMV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusquedaService/GetBandejaMV" message="tns:IBusquedaService_GetBandejaMV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusquedaService/GetBandejaMVResponse" message="tns:IBusquedaService_GetBandejaMV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBandejaDoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusquedaService/GetBandejaDoc" message="tns:IBusquedaService_GetBandejaDoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusquedaService/GetBandejaDocResponse" message="tns:IBusquedaService_GetBandejaDoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoMesaVirtual">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusquedaService/GetTipoMesaVirtual" message="tns:IBusquedaService_GetTipoMesaVirtual_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusquedaService/GetTipoMesaVirtualResponse" message="tns:IBusquedaService_GetTipoMesaVirtual_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBuscarLogOper">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusquedaService/GetBuscarLogOper" message="tns:IBusquedaService_GetBuscarLogOper_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusquedaService/GetBuscarLogOperResponse" message="tns:IBusquedaService_GetBuscarLogOper_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentoAdjunto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusquedaService/GetDocumentoAdjunto" message="tns:IBusquedaService_GetDocumentoAdjunto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusquedaService/GetDocumentoAdjuntoResponse" message="tns:IBusquedaService_GetDocumentoAdjunto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUbigeo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusquedaService/GetUbigeo" message="tns:IBusquedaService_GetUbigeo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusquedaService/GetUbigeoResponse" message="tns:IBusquedaService_GetUbigeo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IBusquedaService" type="tns:IBusquedaService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IBusquedaService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDocumentoDigital">
+      <soap12:operation soapAction="http://tempuri.org/IBusquedaService/GetDocumentoDigital" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentoElectronico">
+      <soap12:operation soapAction="http://tempuri.org/IBusquedaService/GetDocumentoElectronico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMesaVirtual">
+      <soap12:operation soapAction="http://tempuri.org/IBusquedaService/GetMesaVirtual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBandejaMV">
+      <soap12:operation soapAction="http://tempuri.org/IBusquedaService/GetBandejaMV" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBandejaDoc">
+      <soap12:operation soapAction="http://tempuri.org/IBusquedaService/GetBandejaDoc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoMesaVirtual">
+      <soap12:operation soapAction="http://tempuri.org/IBusquedaService/GetTipoMesaVirtual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuscarLogOper">
+      <soap12:operation soapAction="http://tempuri.org/IBusquedaService/GetBuscarLogOper" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentoAdjunto">
+      <soap12:operation soapAction="http://tempuri.org/IBusquedaService/GetDocumentoAdjunto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUbigeo">
+      <soap12:operation soapAction="http://tempuri.org/IBusquedaService/GetUbigeo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BusquedaService">
+    <wsdl:port name="WSHttpBinding_IBusquedaService" binding="tns:WSHttpBinding_IBusquedaService">
+      <soap12:address location="http://localhost:30001/ServiceBusqueda.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:30001/ServiceBusqueda.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

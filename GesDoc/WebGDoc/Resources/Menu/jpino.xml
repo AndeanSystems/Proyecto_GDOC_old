@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<menu>
+<menuItem>
+<text>Inicio</text>
+<horizontalalign>center</horizontalalign>
+<width>100</width>
+<subMenu>
+<menuItem>
+<text>► Escritorio Virtual</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Inicio/frmEscritorioVirtual.aspx</url>
+</menuItem>
+<menuItem>
+<text>► Cambiar Contraseña</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Inicio/frmCambiarClave.aspx</url>
+</menuItem>
+</subMenu>
+</menuItem>
+<menuItem>
+<text>Gestión</text>
+<horizontalalign>center</horizontalalign>
+<width>100</width>
+<subMenu>
+<menuItem>
+<text>► Documento Electronico</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Gestion/frmDocumentoElectronico.aspx</url>
+</menuItem>
+<menuItem>
+<text>► Bandeja E/S</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Gestion/frmBandejaES.aspx</url>
+</menuItem>
+<menuItem>
+<text>► Mesa Virtual</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Gestion/frmMesaVirtual.aspx</url>
+</menuItem>
+</subMenu>
+</menuItem>
+<menuItem>
+<text>Digitalización</text>
+<horizontalalign>center</horizontalalign>
+<width>100</width>
+<subMenu>
+<menuItem>
+<text>► Documento Digital</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Digitalizacion/frmDocumentosFisicos.aspx</url>
+</menuItem>
+<menuItem>
+<text>► Archivo de Datos</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Digitalizacion/frmArchivoDatos.aspx</url>
+</menuItem>
+</subMenu>
+</menuItem>
+<menuItem>
+<text>Búsquedas</text>
+<horizontalalign>center</horizontalalign>
+<width>100</width>
+<subMenu>
+<menuItem>
+<text>► Documentos Electrónicos</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Busquedas/frmDocumentosElectronicos.aspx</url>
+</menuItem>
+<menuItem>
+<text>► Documentos Digitales</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Busquedas/frmDocumentosDigitales.aspx</url>
+</menuItem>
+<menuItem>
+<text>► Mesa de Trabajo Virtual</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Busquedas/frmMesaVirtual.aspx</url>
+</menuItem>
+<menuItem>
+<text>► Log de Operaciones</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Busquedas/frmLogOperaciones.aspx</url>
+</menuItem>
+</subMenu>
+</menuItem>
+<menuItem>
+<text>Configuración</text>
+<horizontalalign>center</horizontalalign>
+<width>100</width>
+<subMenu>
+<menuItem>
+<text>► Acceso</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Configuracion/frmAcceso.aspx</url>
+</menuItem>
+</subMenu>
+</menuItem>
+<menuItem>
+<text>Administracion</text>
+<horizontalalign>center</horizontalalign>
+<width>100</width>
+<subMenu>
+<menuItem>
+<text>► Empresa</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Configuracion/frmEmpresa.aspx</url>
+</menuItem>
+<menuItem>
+<text>► Grupos</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Configuracion/frmGrupo.aspx</url>
+</menuItem>
+<menuItem>
+<text>► Usuarios</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../Configuracion/frmUsuarios.aspx</url>
+</menuItem>
+</subMenu>
+</menuItem>
+<menuItem>
+<text>Seguridad</text>
+<horizontalalign>center</horizontalalign>
+<width>100</width>
+<subMenu>
+<menuItem>
+<text>► Cerra Sesion</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../../frmInicio.aspx</url>
+</menuItem>
+</subMenu>
+</menuItem>
+<menuItem>
+<text>Plan Gestion</text>
+<horizontalalign>center</horizontalalign>
+<width>100</width>
+<subMenu>
+<menuItem>
+<text>► Obj.Estrategico</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../PlanGestion/frmEstrategico.aspx</url>
+</menuItem>
+<menuItem>
+<text>► Obj.Operativo</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../PlanGestion/frmOperativo.aspx</url>
+</menuItem>
+<menuItem>
+<text>► Proyectos</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../PlanGestion/frmProyecto.aspx</url>
+</menuItem>
+<menuItem>
+<text>► Actividades</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../PlanGestion/frmActividad.aspx?Act=0</url>
+</menuItem>
+<menuItem>
+<text>► Generacion Informe</text>
+<horizontalalign>left</horizontalalign>
+<width>170</width>
+<url>../PlanGestion/frmInforme.aspx</url>
+</menuItem>
+</subMenu>
+</menuItem>
+
+
+</menu>
+

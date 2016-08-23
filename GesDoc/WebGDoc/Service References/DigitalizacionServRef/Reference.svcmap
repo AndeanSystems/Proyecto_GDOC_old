@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7dcf975e-57bc-4224-b10d-8c7edd4914a1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:30001/ServiceDigitalizacion.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceDigitalizacion1.disco" MetadataType="Disco" ID="ca270f3a-16d3-4474-9b39-bb5dc141b439" SourceId="1" SourceUrl="http://localhost:30001/ServiceDigitalizacion.svc?disco" />
+    <MetadataFile FileName="ServiceDigitalizacion4.xsd" MetadataType="Schema" ID="51821f5c-c4af-4c86-8ee5-64ea9a47199c" SourceId="1" SourceUrl="http://localhost:30001/ServiceDigitalizacion.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceDigitalizacion41.xsd" MetadataType="Schema" ID="f7e6cca1-cfac-45b5-a8a9-5aece4afcc23" SourceId="1" SourceUrl="http://localhost:30001/ServiceDigitalizacion.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceDigitalizacion42.xsd" MetadataType="Schema" ID="6cfe383b-d367-4dcc-a236-283013407fa9" SourceId="1" SourceUrl="http://localhost:30001/ServiceDigitalizacion.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServiceDigitalizacion43.xsd" MetadataType="Schema" ID="309d6401-efef-4608-8582-0f4232ff60f9" SourceId="1" SourceUrl="http://localhost:30001/ServiceDigitalizacion.svc?xsd=xsd2" />
+    <MetadataFile FileName="DigitalizacionService1.wsdl" MetadataType="Wsdl" ID="76c88571-c3b1-4522-9e1c-f84f02f8950d" SourceId="1" SourceUrl="http://localhost:30001/ServiceDigitalizacion.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

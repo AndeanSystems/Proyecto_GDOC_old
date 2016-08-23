@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7968B2C-68D2-4FDD-A422-27D2683FA00C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Service</RootNamespace>
+    <AssemblyName>Service</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Message\Base\AcknowledgeType.cs" />
+    <Compile Include="Message\Base\PersistType.cs" />
+    <Compile Include="Message\Base\RequestBase.cs" />
+    <Compile Include="Message\Base\ResponseBase.cs" />
+    <Compile Include="Message\Resquest_Response\RRPlanGestion.cs" />
+    <Compile Include="Message\Resquest_Response\RRAcceso.cs" />
+    <Compile Include="Message\Resquest_Response\RRAutoriza.cs" />
+    <Compile Include="Message\Resquest_Response\RRBDocDig.cs" />
+    <Compile Include="Message\Resquest_Response\RRBuscarDocumento.cs" />
+    <Compile Include="Message\Resquest_Response\RRBuscarLogOper.cs" />
+    <Compile Include="Message\Resquest_Response\RRConsModPag.cs" />
+    <Compile Include="Message\Resquest_Response\RRDocAdj.cs" />
+    <Compile Include="Message\Resquest_Response\RRDocDig.cs" />
+    <Compile Include="Message\Resquest_Response\RRDocDigDT.cs" />
+    <Compile Include="Message\Resquest_Response\RRDocDigRef.cs" />
+    <Compile Include="Message\Resquest_Response\RRDocumentoElectronico.cs" />
+    <Compile Include="Message\Resquest_Response\RREmpresa.cs" />
+    <Compile Include="Message\Resquest_Response\RRGrupo.cs" />
+    <Compile Include="Message\Resquest_Response\RRListaDesc.cs" />
+    <Compile Include="Message\Resquest_Response\RRLogOperacion.cs" />
+    <Compile Include="Message\Resquest_Response\RRMensajeAlerta.cs" />
+    <Compile Include="Message\Resquest_Response\RRMesaVirtual.cs" />
+    <Compile Include="Message\Resquest_Response\RROperacion.cs" />
+    <Compile Include="Message\Resquest_Response\RRPersonal.cs" />
+    <Compile Include="Message\Resquest_Response\RRRol.cs" />
+    <Compile Include="Message\Resquest_Response\RRTipoAcceso.cs" />
+    <Compile Include="Message\Resquest_Response\RRTipoArea.cs" />
+    <Compile Include="Message\Resquest_Response\RRTipoCargo.cs" />
+    <Compile Include="Message\Resquest_Response\RRTipoEvento.cs" />
+    <Compile Include="Message\Resquest_Response\RRTipoGrupo.cs" />
+    <Compile Include="Message\Resquest_Response\RRTipoOperacion.cs" />
+    <Compile Include="Message\Resquest_Response\RRTipoParticip.cs" />
+    <Compile Include="Message\Resquest_Response\RRTipoPrioridad.cs" />
+    <Compile Include="Message\Resquest_Response\RRTipoUsuario.cs" />
+    <Compile Include="Message\Resquest_Response\RRUbigeo.cs" />
+    <Compile Include="Message\Resquest_Response\RRUsuarioGrupo.cs" />
+    <Compile Include="Message\Resquest_Response\RRUsuarioPer.cs" />
+    <Compile Include="Message\Resquest_Response\RRUsuParticip.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Implementations\BusquedaService.cs" />
+    <Compile Include="Service\Implementations\DigitalizacionService.cs" />
+    <Compile Include="Service\Implementations\GestionService.cs" />
+    <Compile Include="Service\Implementations\PlanGestionService.cs" />
+    <Compile Include="Service\Interfaces\IBusquedaService.cs" />
+    <Compile Include="Service\Interfaces\IDigitalizacionService.cs" />
+    <Compile Include="Service\Interfaces\IGestionService.cs" />
+    <Compile Include="Service\Interfaces\IPlanGestionService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{97F8789D-30B7-4101-A4C1-C575DDB259AE}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{D290E2C1-514D-4863-B33C-5282CF64EDB4}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{E4F6C17A-993D-430E-995C-97CE376B93F5}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

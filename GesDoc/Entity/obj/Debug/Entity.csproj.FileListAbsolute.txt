@@ -1,0 +1,9 @@
+E:\Trunk_Tisi\GesDoc\Entity\bin\Debug\Entity.dll
+E:\Trunk_Tisi\GesDoc\Entity\bin\Debug\Entity.pdb
+E:\Trunk_Tisi\GesDoc\Entity\obj\Debug\ResolveAssemblyReference.cache
+E:\Trunk_Tisi\GesDoc\Entity\obj\Debug\Entity.dll
+E:\Trunk_Tisi\GesDoc\Entity\obj\Debug\Entity.pdb
+D:\Proy_GDOC\Fuentes_GDOC\GesDoc\Entity\bin\Debug\Entity.dll
+D:\Proy_GDOC\Fuentes_GDOC\GesDoc\Entity\bin\Debug\Entity.pdb
+D:\Proy_GDOC\Fuentes_GDOC\GesDoc\Entity\obj\Debug\Entity.dll
+D:\Proy_GDOC\Fuentes_GDOC\GesDoc\Entity\obj\Debug\Entity.pdb

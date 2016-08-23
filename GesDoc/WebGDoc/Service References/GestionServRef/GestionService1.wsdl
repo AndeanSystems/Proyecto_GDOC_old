@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="GestionService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IGestionService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:30001/ServiceGestion.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:30001/ServiceGestion.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:30001/ServiceGestion.svc?xsd=xsd2" namespace="http://www.yourcompany.com/types/" />
+      <xsd:import schemaLocation="http://localhost:30001/ServiceGestion.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGestionService_SetAddUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetAddUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAddUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetAddUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetUsuarioPer_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetUsuarioPer" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetUsuarioPer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetUsuarioPerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetEmpresa_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetEmpresa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetMenuUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetMenuUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListaTipoAcceso_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaTipoAcceso" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListaTipoAcceso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaTipoAccesoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListaTipoPrioridad_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaTipoPrioridad" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListaTipoPrioridad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaTipoPrioridadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetEmpresaAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetEmpresaAdd" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetEmpresaAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetEmpresaAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListaTipoParticip_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaTipoParticip" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListaTipoParticip_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaTipoParticipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoEvento_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoEvento" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoEvento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoEventoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoOperacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoOperacion" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoOperacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoOperacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoRol_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoRol" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoRol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoCargo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoCargo" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoCargo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoCargoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoArea_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoArea" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoArea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoAreaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoUsuGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoUsuGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetTipoUsuGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoUsuGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAutorizaAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetAutorizaAdd" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAutorizaAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetAutorizaAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListaUsuarioPer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaUsuarioPer" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListaUsuarioPer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaUsuarioPerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListaUsuarioGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaUsuarioGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListaUsuarioGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaUsuarioGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetUsuParticipante_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetUsuParticipante" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetUsuParticipante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetUsuParticipanteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_UpdateUsuParticipante_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUsuParticipante" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_UpdateUsuParticipante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUsuParticipanteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetUserPart_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPart" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetUserPart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetUserPartBatch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPartBatch" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetUserPartBatch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPartBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAnulaUserPart_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetAnulaUserPart" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAnulaUserPart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetAnulaUserPartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListDes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListDes" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListDes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListDesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListOper_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListOper" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetListOper_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListOperResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetUsuarioGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsuarioGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetUsuarioGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsuarioGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetAutorizaList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAutorizaList" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetAutorizaList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAutorizaListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetGrupoUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetGrupoUser" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetGrupoUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetGrupoUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetGrupoAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetGrupoAdd" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetGrupoAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetGrupoAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAnulaGrupoUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetAnulaGrupoUser" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAnulaGrupoUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetAnulaGrupoUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetModuloPagina_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuloPagina" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetModuloPagina_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuloPaginaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAccesoSistema_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetAccesoSistema" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAccesoSistema_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetAccesoSistemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetAccesoSistema_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccesoSistema" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_GetAccesoSistema_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccesoSistemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAnulaAcceso_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetAnulaAcceso" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAnulaAcceso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetAnulaAccesoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAddPersonal_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetAddPersonal" />
+  </wsdl:message>
+  <wsdl:message name="IGestionService_SetAddPersonal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetAddPersonalResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IGestionService">
+    <wsdl:operation name="SetAddUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/SetAddUsuario" message="tns:IGestionService_SetAddUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/SetAddUsuarioResponse" message="tns:IGestionService_SetAddUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUsuarioPer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/SetUsuarioPer" message="tns:IGestionService_SetUsuarioPer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/SetUsuarioPerResponse" message="tns:IGestionService_SetUsuarioPer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpresa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetEmpresa" message="tns:IGestionService_GetEmpresa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetEmpresaResponse" message="tns:IGestionService_GetEmpresa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetMenuUsuario" message="tns:IGestionService_GetMenuUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetMenuUsuarioResponse" message="tns:IGestionService_GetMenuUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListaTipoAcceso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetListaTipoAcceso" message="tns:IGestionService_GetListaTipoAcceso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetListaTipoAccesoResponse" message="tns:IGestionService_GetListaTipoAcceso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListaTipoPrioridad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetListaTipoPrioridad" message="tns:IGestionService_GetListaTipoPrioridad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetListaTipoPrioridadResponse" message="tns:IGestionService_GetListaTipoPrioridad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetEmpresaAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/SetEmpresaAdd" message="tns:IGestionService_SetEmpresaAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/SetEmpresaAddResponse" message="tns:IGestionService_SetEmpresaAdd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListaTipoParticip">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetListaTipoParticip" message="tns:IGestionService_GetListaTipoParticip_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetListaTipoParticipResponse" message="tns:IGestionService_GetListaTipoParticip_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoEvento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetTipoEvento" message="tns:IGestionService_GetTipoEvento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetTipoEventoResponse" message="tns:IGestionService_GetTipoEvento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoOperacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetTipoOperacion" message="tns:IGestionService_GetTipoOperacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetTipoOperacionResponse" message="tns:IGestionService_GetTipoOperacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoRol">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetTipoRol" message="tns:IGestionService_GetTipoRol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetTipoRolResponse" message="tns:IGestionService_GetTipoRol_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoCargo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetTipoCargo" message="tns:IGestionService_GetTipoCargo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetTipoCargoResponse" message="tns:IGestionService_GetTipoCargo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoArea">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetTipoArea" message="tns:IGestionService_GetTipoArea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetTipoAreaResponse" message="tns:IGestionService_GetTipoArea_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetTipoGrupo" message="tns:IGestionService_GetTipoGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetTipoGrupoResponse" message="tns:IGestionService_GetTipoGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetTipoUsuario" message="tns:IGestionService_GetTipoUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetTipoUsuarioResponse" message="tns:IGestionService_GetTipoUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoUsuGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetTipoUsuGrupo" message="tns:IGestionService_GetTipoUsuGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetTipoUsuGrupoResponse" message="tns:IGestionService_GetTipoUsuGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAutorizaAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/SetAutorizaAdd" message="tns:IGestionService_SetAutorizaAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/SetAutorizaAddResponse" message="tns:IGestionService_SetAutorizaAdd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListaUsuarioPer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetListaUsuarioPer" message="tns:IGestionService_GetListaUsuarioPer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetListaUsuarioPerResponse" message="tns:IGestionService_GetListaUsuarioPer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListaUsuarioGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetListaUsuarioGrupo" message="tns:IGestionService_GetListaUsuarioGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetListaUsuarioGrupoResponse" message="tns:IGestionService_GetListaUsuarioGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUsuParticipante">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/SetUsuParticipante" message="tns:IGestionService_SetUsuParticipante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/SetUsuParticipanteResponse" message="tns:IGestionService_SetUsuParticipante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUsuParticipante">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/UpdateUsuParticipante" message="tns:IGestionService_UpdateUsuParticipante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/UpdateUsuParticipanteResponse" message="tns:IGestionService_UpdateUsuParticipante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetUserPart" message="tns:IGestionService_GetUserPart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetUserPartResponse" message="tns:IGestionService_GetUserPart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPartBatch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetUserPartBatch" message="tns:IGestionService_GetUserPartBatch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetUserPartBatchResponse" message="tns:IGestionService_GetUserPartBatch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAnulaUserPart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/SetAnulaUserPart" message="tns:IGestionService_SetAnulaUserPart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/SetAnulaUserPartResponse" message="tns:IGestionService_SetAnulaUserPart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListDes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetListDes" message="tns:IGestionService_GetListDes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetListDesResponse" message="tns:IGestionService_GetListDes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOper">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetListOper" message="tns:IGestionService_GetListOper_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetListOperResponse" message="tns:IGestionService_GetListOper_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsuarioGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetUsuarioGrupo" message="tns:IGestionService_GetUsuarioGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetUsuarioGrupoResponse" message="tns:IGestionService_GetUsuarioGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAutorizaList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetAutorizaList" message="tns:IGestionService_GetAutorizaList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetAutorizaListResponse" message="tns:IGestionService_GetAutorizaList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetGrupoUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/SetGrupoUser" message="tns:IGestionService_SetGrupoUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/SetGrupoUserResponse" message="tns:IGestionService_SetGrupoUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetGrupoAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/SetGrupoAdd" message="tns:IGestionService_SetGrupoAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/SetGrupoAddResponse" message="tns:IGestionService_SetGrupoAdd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAnulaGrupoUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/SetAnulaGrupoUser" message="tns:IGestionService_SetAnulaGrupoUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/SetAnulaGrupoUserResponse" message="tns:IGestionService_SetAnulaGrupoUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModuloPagina">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetModuloPagina" message="tns:IGestionService_GetModuloPagina_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetModuloPaginaResponse" message="tns:IGestionService_GetModuloPagina_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAccesoSistema">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/SetAccesoSistema" message="tns:IGestionService_SetAccesoSistema_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/SetAccesoSistemaResponse" message="tns:IGestionService_SetAccesoSistema_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccesoSistema">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/GetAccesoSistema" message="tns:IGestionService_GetAccesoSistema_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/GetAccesoSistemaResponse" message="tns:IGestionService_GetAccesoSistema_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAnulaAcceso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/SetAnulaAcceso" message="tns:IGestionService_SetAnulaAcceso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/SetAnulaAccesoResponse" message="tns:IGestionService_SetAnulaAcceso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAddPersonal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionService/SetAddPersonal" message="tns:IGestionService_SetAddPersonal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionService/SetAddPersonalResponse" message="tns:IGestionService_SetAddPersonal_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IGestionService" type="tns:IGestionService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IGestionService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetAddUsuario">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/SetAddUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUsuarioPer">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/SetUsuarioPer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpresa">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetEmpresa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuUsuario">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetMenuUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListaTipoAcceso">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetListaTipoAcceso" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListaTipoPrioridad">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetListaTipoPrioridad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetEmpresaAdd">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/SetEmpresaAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListaTipoParticip">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetListaTipoParticip" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoEvento">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetTipoEvento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoOperacion">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetTipoOperacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoRol">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetTipoRol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoCargo">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetTipoCargo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoArea">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetTipoArea" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoGrupo">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetTipoGrupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoUsuario">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetTipoUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoUsuGrupo">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetTipoUsuGrupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAutorizaAdd">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/SetAutorizaAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListaUsuarioPer">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetListaUsuarioPer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListaUsuarioGrupo">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetListaUsuarioGrupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUsuParticipante">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/SetUsuParticipante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUsuParticipante">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/UpdateUsuParticipante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPart">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetUserPart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPartBatch">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetUserPartBatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAnulaUserPart">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/SetAnulaUserPart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListDes">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetListDes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOper">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetListOper" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsuarioGrupo">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetUsuarioGrupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAutorizaList">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetAutorizaList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGrupoUser">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/SetGrupoUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGrupoAdd">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/SetGrupoAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAnulaGrupoUser">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/SetAnulaGrupoUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuloPagina">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetModuloPagina" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAccesoSistema">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/SetAccesoSistema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccesoSistema">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/GetAccesoSistema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAnulaAcceso">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/SetAnulaAcceso" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAddPersonal">
+      <soap12:operation soapAction="http://tempuri.org/IGestionService/SetAddPersonal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GestionService">
+    <wsdl:port name="WSHttpBinding_IGestionService" binding="tns:WSHttpBinding_IGestionService">
+      <soap12:address location="http://localhost:30001/ServiceGestion.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:30001/ServiceGestion.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

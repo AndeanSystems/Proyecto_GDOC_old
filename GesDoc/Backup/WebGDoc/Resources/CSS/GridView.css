@@ -1,0 +1,57 @@
+﻿body
+{
+}
+
+.GVPrincipal
+{
+	/*width: 100%;*/
+	font-family: Calibri;
+	border-color:#CCCCCC;
+}
+.GVSubPrincipal
+{
+    width: 100%;
+    
+    font-family: Calibri;
+    border-color: #FFFFFF #FFFFFF #FFFFFF #8c8c8c ;
+    border-style: none none none solid ;
+    border-width: 0px 0px 0px 1px ; 
+}
+
+.GVHeader
+{
+	font-family: Calibri;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	text-align:center;
+	color: #5E5E5E;
+	background-color: #CCCCCC;
+	text-align:center;
+}
+
+.GVItems
+{
+    font-family: Calibri;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+    color: #000000; /*#5E5E5E;*/
+    background-color: #FFFFFF; 
+    border-width: inherit;
+}
+.GVItemsAlt
+{
+	font-family: Calibri;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #000000; /*#5E5E5E;*/
+	text-align :left;
+	background-color: #F0F0F0;
+	border-width: inherit;
+}

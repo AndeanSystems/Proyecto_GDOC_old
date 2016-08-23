@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.yourcompany.com/types/" elementFormDefault="qualified" targetNamespace="http://www.yourcompany.com/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:30001/ServicePlanGestion.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="PlanGestionRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CtrPlanGestion" nillable="true" type="tns:ePlanGestion" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PlanGestionRequest" nillable="true" type="tns:PlanGestionRequest" />
+  <xs:complexType name="RequestBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccessToken" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Action" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientTag" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="LoadOptions" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="RequestId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RequestBase" nillable="true" type="tns:RequestBase" />
+  <xs:complexType name="ePlanGestion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AbreActi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AbreObjEstr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AbreObjOper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AbreProy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AvanAbr" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AvanAgo" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AvanDic" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AvanEne" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AvanFeb" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AvanJul" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AvanJun" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AvanMar" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AvanMay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AvanNov" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AvanOct" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AvanSet" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CodiActi" type="xs:long" />
+      <xs:element minOccurs="0" name="CodiObjEstr" type="xs:long" />
+      <xs:element minOccurs="0" name="CodiObjOper" type="xs:long" />
+      <xs:element minOccurs="0" name="CodiProy" type="xs:long" />
+      <xs:element minOccurs="0" name="CodiUsu" type="xs:long" />
+      <xs:element minOccurs="0" name="Coment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompAbr" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CompAgo" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CompDic" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CompEne" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CompFeb" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CompJul" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CompJun" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CompMar" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CompMay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CompNov" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CompOct" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CompSet" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DescActi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescObjEstr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescObjOper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescProy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstaActi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstaComent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstaObjEstr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstaObjOper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstaPeriMes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstaProy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MesAvan" type="xs:int" />
+      <xs:element minOccurs="0" name="MesPlanGes" type="xs:int" />
+      <xs:element minOccurs="0" name="NumeItemMeta" type="xs:long" />
+      <xs:element minOccurs="0" name="PeriObjEstr" type="xs:int" />
+      <xs:element minOccurs="0" name="PeriPlanGes" type="xs:long" />
+      <xs:element minOccurs="0" name="PesoPondMeta" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TypeOperacion" type="xs:short" />
+      <xs:element minOccurs="0" name="UnidMedMeta" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ePlanGestion" nillable="true" type="tns:ePlanGestion" />
+  <xs:complexType name="PlanGestionResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddActividad" type="xs:long" />
+          <xs:element minOccurs="0" name="AddComentarioAvance" type="xs:long" />
+          <xs:element minOccurs="0" name="AddObetivoEstrategico" type="xs:long" />
+          <xs:element minOccurs="0" name="AddObetivoOperativo" type="xs:long" />
+          <xs:element minOccurs="0" name="AddProyecto" type="xs:long" />
+          <xs:element minOccurs="0" name="ListaActividad" nillable="true" type="tns:ArrayOfePlanGestion" />
+          <xs:element minOccurs="0" name="ListaComentarioAvance" nillable="true" type="tns:ArrayOfePlanGestion" />
+          <xs:element minOccurs="0" name="ListaInforme" nillable="true" type="tns:ArrayOfePlanGestion" />
+          <xs:element minOccurs="0" name="ListaObetivoEstrategico" nillable="true" type="tns:ArrayOfePlanGestion" />
+          <xs:element minOccurs="0" name="ListaObetivoOperativo" nillable="true" type="tns:ArrayOfePlanGestion" />
+          <xs:element minOccurs="0" name="ListaProyecto" nillable="true" type="tns:ArrayOfePlanGestion" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PlanGestionResponse" nillable="true" type="tns:PlanGestionResponse" />
+  <xs:complexType name="ResponseBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Acknowledge" type="tns:AcknowledgeType" />
+      <xs:element minOccurs="0" name="Build" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorrelationId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReservationExpires" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReservationId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowsAffected" type="xs:int" />
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseBase" nillable="true" type="tns:ResponseBase" />
+  <xs:simpleType name="AcknowledgeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Failure" />
+      <xs:enumeration value="Success" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AcknowledgeType" nillable="true" type="tns:AcknowledgeType" />
+  <xs:complexType name="ArrayOfePlanGestion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ePlanGestion" nillable="true" type="tns:ePlanGestion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfePlanGestion" nillable="true" type="tns:ArrayOfePlanGestion" />
+</xs:schema>

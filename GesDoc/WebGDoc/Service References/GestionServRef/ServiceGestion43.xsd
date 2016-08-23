@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:30001/ServiceGestion.svc?xsd=xsd2" namespace="http://www.yourcompany.com/types/" />
+  <xs:element name="SetAddUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://www.yourcompany.com/types/" minOccurs="0" name="RqtUser" nillable="true" type="q1:UsuarioPerRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAddUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://www.yourcompany.com/types/" minOccurs="0" name="SetAddUsuarioResult" nillable="true" type="q2:UsuarioResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetUsuarioPer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://www.yourcompany.com/types/" minOccurs="0" name="RqtUser" nillable="true" type="q3:UsuarioPerRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetUsuarioPerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://www.yourcompany.com/types/" minOccurs="0" name="SetUsuarioPerResult" nillable="true" type="q4:UsuarioResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://www.yourcompany.com/types/" minOccurs="0" name="RqtEmpr" nillable="true" type="q5:EmpresaRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpresaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://www.yourcompany.com/types/" minOccurs="0" name="GetEmpresaResult" nillable="true" type="q6:LEmpresaResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMenuUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://www.yourcompany.com/types/" minOccurs="0" name="RqtMenu" nillable="true" type="q7:AccesoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMenuUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://www.yourcompany.com/types/" minOccurs="0" name="GetMenuUsuarioResult" nillable="true" type="q8:LAccesoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaTipoAcceso">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://www.yourcompany.com/types/" minOccurs="0" name="RqtListaTipoAcceso" nillable="true" type="q9:TipoAccesoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaTipoAccesoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://www.yourcompany.com/types/" minOccurs="0" name="GetListaTipoAccesoResult" nillable="true" type="q10:TipoAccesoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaTipoPrioridad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://www.yourcompany.com/types/" minOccurs="0" name="RqtListaTipoPrioridad" nillable="true" type="q11:TipoPrioridadRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaTipoPrioridadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://www.yourcompany.com/types/" minOccurs="0" name="GetListaTipoPrioridadResult" nillable="true" type="q12:TipoPrioridadResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetEmpresaAdd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://www.yourcompany.com/types/" minOccurs="0" name="RqtEmpresa" nillable="true" type="q13:EmpresaRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetEmpresaAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://www.yourcompany.com/types/" minOccurs="0" name="SetEmpresaAddResult" nillable="true" type="q14:EmpresaResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaTipoParticip">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://www.yourcompany.com/types/" minOccurs="0" name="RqtListaTipoParticip" nillable="true" type="q15:TipoParticipRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaTipoParticipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://www.yourcompany.com/types/" minOccurs="0" name="GetListaTipoParticipResult" nillable="true" type="q16:TipoParticipResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoEvento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://www.yourcompany.com/types/" minOccurs="0" name="RqtTipoEvento" nillable="true" type="q17:TipoEventoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoEventoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://www.yourcompany.com/types/" minOccurs="0" name="GetTipoEventoResult" nillable="true" type="q18:TipoEventoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoOperacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://www.yourcompany.com/types/" minOccurs="0" name="RqtTipoOperacion" nillable="true" type="q19:TipoOperacionRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoOperacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://www.yourcompany.com/types/" minOccurs="0" name="GetTipoOperacionResult" nillable="true" type="q20:TipoOperacionResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoRol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://www.yourcompany.com/types/" minOccurs="0" name="RqtRol" nillable="true" type="q21:RolRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoRolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://www.yourcompany.com/types/" minOccurs="0" name="GetTipoRolResult" nillable="true" type="q22:RolResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoCargo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://www.yourcompany.com/types/" minOccurs="0" name="RqtTipocargo" nillable="true" type="q23:TipoCargoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoCargoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://www.yourcompany.com/types/" minOccurs="0" name="GetTipoCargoResult" nillable="true" type="q24:TipoCargoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoArea">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://www.yourcompany.com/types/" minOccurs="0" name="RqtTipoArea" nillable="true" type="q25:TipoAreaRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoAreaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://www.yourcompany.com/types/" minOccurs="0" name="GetTipoAreaResult" nillable="true" type="q26:TipoAreaResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoGrupo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://www.yourcompany.com/types/" minOccurs="0" name="RqtTipoGrupo" nillable="true" type="q27:TipoGrupoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoGrupoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://www.yourcompany.com/types/" minOccurs="0" name="GetTipoGrupoResult" nillable="true" type="q28:TipoGrupoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://www.yourcompany.com/types/" minOccurs="0" name="RqtTipoUsuario" nillable="true" type="q29:TipoUsuarioRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://www.yourcompany.com/types/" minOccurs="0" name="GetTipoUsuarioResult" nillable="true" type="q30:TipoUsuarioResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoUsuGrupo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://www.yourcompany.com/types/" minOccurs="0" name="RqtTipoUsuGrupo" nillable="true" type="q31:TipoGrupoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoUsuGrupoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://www.yourcompany.com/types/" minOccurs="0" name="GetTipoUsuGrupoResult" nillable="true" type="q32:TipoGrupoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAutorizaAdd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://www.yourcompany.com/types/" minOccurs="0" name="RqtAutoriza" nillable="true" type="q33:AutorizaRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAutorizaAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://www.yourcompany.com/types/" minOccurs="0" name="SetAutorizaAddResult" nillable="true" type="q34:AutorizaResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaUsuarioPer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://www.yourcompany.com/types/" minOccurs="0" name="RqtUsuarioPerRequest" nillable="true" type="q35:UsuarioPerRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaUsuarioPerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://www.yourcompany.com/types/" minOccurs="0" name="GetListaUsuarioPerResult" nillable="true" type="q36:UsuarioPerResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaUsuarioGrupo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://www.yourcompany.com/types/" minOccurs="0" name="RqtListaUsuarioPer" nillable="true" type="q37:UsuarioPerRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaUsuarioGrupoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://www.yourcompany.com/types/" minOccurs="0" name="GetListaUsuarioGrupoResult" nillable="true" type="q38:UsuarioPerResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetUsuParticipante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://www.yourcompany.com/types/" minOccurs="0" name="RqtUsuParticipRequest" nillable="true" type="q39:UsuParticipRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetUsuParticipanteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://www.yourcompany.com/types/" minOccurs="0" name="SetUsuParticipanteResult" nillable="true" type="q40:UsuParticipResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUsuParticipante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://www.yourcompany.com/types/" minOccurs="0" name="RqtUsuParticip" nillable="true" type="q41:UsuParticipRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUsuParticipanteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://www.yourcompany.com/types/" minOccurs="0" name="UpdateUsuParticipanteResult" nillable="true" type="q42:UsuParticipResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://www.yourcompany.com/types/" minOccurs="0" name="RqtUserPart" nillable="true" type="q43:UsuParticipRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://www.yourcompany.com/types/" minOccurs="0" name="GetUserPartResult" nillable="true" type="q44:LUserParticResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPartBatch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://www.yourcompany.com/types/" minOccurs="0" name="RqtUserPart" nillable="true" type="q45:UsuParticipRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPartBatchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://www.yourcompany.com/types/" minOccurs="0" name="GetUserPartBatchResult" nillable="true" type="q46:LUserParticResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAnulaUserPart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://www.yourcompany.com/types/" minOccurs="0" name="RqtAnulaUserP" nillable="true" type="q47:UsuParticipRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAnulaUserPartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://www.yourcompany.com/types/" minOccurs="0" name="SetAnulaUserPartResult" nillable="true" type="q48:UsuParticipResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListDes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://www.yourcompany.com/types/" minOccurs="0" name="RqtListaDesc" nillable="true" type="q49:ListaDescRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListDesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://www.yourcompany.com/types/" minOccurs="0" name="GetListDesResult" nillable="true" type="q50:ListaDescResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListOper">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://www.yourcompany.com/types/" minOccurs="0" name="RqtListOper" nillable="true" type="q51:OperacionRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListOperResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://www.yourcompany.com/types/" minOccurs="0" name="GetListOperResult" nillable="true" type="q52:OperacionResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsuarioGrupo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://www.yourcompany.com/types/" minOccurs="0" name="RqtUsuarioGrupo" nillable="true" type="q53:UsuarioGrupoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsuarioGrupoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://www.yourcompany.com/types/" minOccurs="0" name="GetUsuarioGrupoResult" nillable="true" type="q54:UsuarioGrupoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAutorizaList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://www.yourcompany.com/types/" minOccurs="0" name="RqtAutoriza" nillable="true" type="q55:AutorizaRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAutorizaListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://www.yourcompany.com/types/" minOccurs="0" name="GetAutorizaListResult" nillable="true" type="q56:LUserAutoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGrupoUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://www.yourcompany.com/types/" minOccurs="0" name="RqtGrupoUser" nillable="true" type="q57:UsuarioGrupoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGrupoUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://www.yourcompany.com/types/" minOccurs="0" name="SetGrupoUserResult" nillable="true" type="q58:GrupoUsuarioResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGrupoAdd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://www.yourcompany.com/types/" minOccurs="0" name="RqtGrupo" nillable="true" type="q59:GrupoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGrupoAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://www.yourcompany.com/types/" minOccurs="0" name="SetGrupoAddResult" nillable="true" type="q60:GrupoResponse" />
+        <xs:element xmlns:q61="http://www.yourcompany.com/types/" minOccurs="0" name="RqtGrupo" nillable="true" type="q61:GrupoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAnulaGrupoUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://www.yourcompany.com/types/" minOccurs="0" name="RqtGrupoUser" nillable="true" type="q62:UsuarioGrupoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAnulaGrupoUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://www.yourcompany.com/types/" minOccurs="0" name="SetAnulaGrupoUserResult" nillable="true" type="q63:GrupoUsuarioResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModuloPagina">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://www.yourcompany.com/types/" minOccurs="0" name="RqtModPag" nillable="true" type="q64:ConsModPagRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModuloPaginaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://www.yourcompany.com/types/" minOccurs="0" name="GetModuloPaginaResult" nillable="true" type="q65:ConsModPagResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAccesoSistema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://www.yourcompany.com/types/" minOccurs="0" name="RqtAcceso" nillable="true" type="q66:AccesoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAccesoSistemaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://www.yourcompany.com/types/" minOccurs="0" name="SetAccesoSistemaResult" nillable="true" type="q67:AccesoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAccesoSistema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://www.yourcompany.com/types/" minOccurs="0" name="RqtAccesolist" nillable="true" type="q68:AccesoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAccesoSistemaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://www.yourcompany.com/types/" minOccurs="0" name="GetAccesoSistemaResult" nillable="true" type="q69:LAccesoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAnulaAcceso">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://www.yourcompany.com/types/" minOccurs="0" name="RqtAcceso" nillable="true" type="q70:AccesoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAnulaAccesoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://www.yourcompany.com/types/" minOccurs="0" name="SetAnulaAccesoResult" nillable="true" type="q71:AccesoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAddPersonal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://www.yourcompany.com/types/" minOccurs="0" name="RqtPersonal" nillable="true" type="q72:PersonalRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAddPersonalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://www.yourcompany.com/types/" minOccurs="0" name="SetAddPersonalResult" nillable="true" type="q73:PersonalResponse" />
+        <xs:element xmlns:q74="http://www.yourcompany.com/types/" minOccurs="0" name="RqtPersonal" nillable="true" type="q74:PersonalRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
